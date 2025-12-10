@@ -1,0 +1,313 @@
+:root {
+    --color-canvas-bg: #DAE0E6;
+    --color-body: #FFFFFF;
+    --color-header-bg: #FFFFFF;
+    --color-primary-orange: #FF4500;
+    --color-text-title: #222222;
+    --color-text-body: #1c1c1c;
+    --color-text-meta: #787C7E;
+    --color-border: #CCCCCC;
+    --color-vote-bg: #F8F9FA;
+    --color-vote-arrow: #878A8C;
+    --color-hover-bg: #F6F7F8;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-canvas-bg);
+    font-family: var(--font-family);
+    color: var(--color-text-body);
+    overflow-y: scroll;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-header-bg);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.fake-logo-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-primary-orange);
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-text-title);
+}
+
+/* Main container */
+.container {
+    max-width: 980px;
+    margin: 20px auto;
+    display: flex;
+    gap: 24px;
+    padding: 0 10px;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0; /* Fix flex overflow */
+}
+
+.sidebar {
+    width: 312px;
+    display: none;
+}
+
+@media (min-width: 960px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Tabs */
+.tabs-container {
+    background-color: var(--color-header-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-text-meta);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+    background-color: var(--color-hover-bg);
+}
+
+.tab-btn.active {
+    background-color: var(--color-hover-bg);
+    color: var(--color-primary-orange);
+}
+
+/* Post List */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-card {
+    background-color: var(--color-body);
+    border: 1px solid var(--color-border); /* Thinner styling */
+    border-radius: 4px; /* Classic radius */
+    display: flex;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.post-card:hover {
+    border-color: #898989;
+}
+
+.vote-column {
+    width: 40px;
+    background-color: var(--color-vote-bg);
+    border-right: 0px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.arrow {
+    color: var(--color-vote-arrow);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow:hover {
+    color: var(--color-primary-orange); 
+    /* Only upvote usually turns orange, downvote blue, but keeping simple orange theme */
+}
+
+.vote-count {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 4px 0;
+    color: var(--color-text-body);
+}
+
+.post-content {
+    padding: 8px;
+    flex: 1;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: var(--color-text-meta);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.subreddit-prefix {
+    font-weight: 700;
+    color: var(--color-text-body);
+}
+
+.post-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-title);
+    margin-bottom: 6px;
+    line-height: 22px;
+}
+
+.post-tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #444;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-right: 5px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.tag-doomer { background-color: #ffcccc; color: #a00; }
+.tag-accelerator { background-color: #ccffcc; color: #006600; }
+.tag-ethics { background-color: #e6ccff; color: #4b0082; }
+.tag-glitch { background-color: #333; color: #0f0; }
+.tag-economy { background-color: #fff2cc; color: #996600; }
+.tag-war { background-color: #550000; color: #ffcccc; }
+.tag-utopia { background-color: #ccf2ff; color: #005580; }
+
+.post-desc {
+    font-size: 14px;
+    color: var(--color-text-body);
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+
+.post-footer-btns {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text-meta);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    background-color: var(--color-hover-bg);
+}
+
+/* Sidebar Widgets */
+.sidebar-widget {
+    background-color: var(--color-body);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.widget-header {
+    background-color: var(--color-primary-orange); /* Or generic blue/grey, mimicking requirement */
+    height: 30px; /* Slim header for 'About' often has image, simple here */
+    padding: 12px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+
+.widget-content {
+    padding: 12px;
+}
+
+.widget-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text-title);
+}
+
+.widget-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text-body);
+    margin-bottom: 10px;
+}
+
+.community-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-num {
+    font-weight: 700;
+    display: block;
+}
+.stat-label {
+    font-size: 12px;
+    color: var(--color-text-meta);
+}

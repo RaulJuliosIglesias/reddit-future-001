@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future AI Newsfeed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <div class="fake-logo-icon">F</div>
+            <span class="navbar-title">Future AI Newsfeed</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Main Feed -->
+        <div class="main-content">
+
+            <!-- Filter Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active" onclick="switchTab('2035')">2035</button>
+                <button class="tab-btn" onclick="switchTab('2040')">2040</button>
+                <button class="tab-btn" onclick="switchTab('2045')">2045</button>
+            </div>
+
+            <!-- Posts Area -->
+            <div id="posts-container" class="post-list">
+                <!-- Posts injected by JS -->
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-header">
+                    About Community
+                </div>
+                <div class="widget-content">
+                    <p class="widget-text">
+                        Welcome to the Future AI Newsfeed. Tracking the timeline of artificial evolution, from helpful
+                        assistants to galactic overlords.
+                    </p>
+                    <div class="community-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">8.2m</span>
+                            <span class="stat-label">Observers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">4.5k</span>
+                            <span class="stat-label">Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="widget-content">
+                    <div class="widget-title">Trending Tags</div>
+                    <span class="post-tag tag-doomer" style="margin-bottom:5px;">DOOMER</span>
+                    <span class="post-tag tag-accelerator" style="margin-bottom:5px;">ACCELERATOR</span>
+                    <span class="post-tag tag-ethics" style="margin-bottom:5px;">ETHICS</span>
+                    <span class="post-tag tag-glitch" style="margin-bottom:5px;">GLITCH</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
