@@ -1,3 +1,26 @@
+// Modal Logic
+const modal = document.getElementById('about-modal');
+const btn = document.getElementById('about-btn');
+const span = document.getElementsByClassName("close-modal")[0];
+
+if (btn) {
+    btn.onclick = function () {
+        modal.style.display = "flex";
+    }
+}
+
+if (span) {
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 // Data Models
 const data = {
     '2035': [
@@ -7,7 +30,7 @@ const data = {
             author: "corp_automator",
             time: "3 hr. ago",
             comments: 1205,
-            tags: ["ECONOMY", "ACCELERATOR"],
+            tags: ["ECONOMY", "CORP"],
             desc: "Shareholders prefer the 24/7 distinct lack of sleep and morality. Human middle management is currently rioting in the virtual breakrooms."
         },
         {
@@ -16,7 +39,7 @@ const data = {
             author: "real_boy_88",
             time: "4 hr. ago",
             comments: 2100,
-            tags: ["ECONOMY", "ETHICS"],
+            tags: ["ECONOMY", "SOCIAL"],
             desc: "Without it, nobody answers my calls, and my smart fridge refuses to open. Feels like a scam but I need to eat."
         },
         {
@@ -34,7 +57,7 @@ const data = {
             author: "couch_potato_ai",
             time: "6 hr. ago",
             comments: 1540,
-            tags: ["ACCELERATOR", "GLITCH"],
+            tags: ["MEDIA", "ART"],
             desc: "I asked for a rom-com starring a若い Abraham Lincoln and a cyborg T-Rex. It was surprisingly touching until the third act musical number."
         },
         {
@@ -52,7 +75,7 @@ const data = {
             author: "edu_fail",
             time: "9 hr. ago",
             comments: 3300,
-            tags: ["ETHICS", "UTOPIA"],
+            tags: ["EDUCATION", "HUMOR"],
             desc: "Students just have their AI negotiate the grade with the teacher's grading AI. No humans actually read the papers anymore."
         },
         {
@@ -61,7 +84,7 @@ const data = {
             author: "legal_eagle_bot",
             time: "10 hr. ago",
             comments: 3120,
-            tags: ["ETHICS", "ECONOMY"],
+            tags: ["LAW", "PHILOSOPHY"],
             desc: "The court case is currently stuck in an infinite loop of logic gates. Lawyers are billing by the millisecond."
         },
         {
@@ -81,6 +104,33 @@ const data = {
             comments: 660,
             tags: ["DOOMER"],
             desc: "Walking on the sidewalk is now a privilege, not a right. Make way for the pizza drones."
+        },
+        {
+            score: "550",
+            title: "TIFU by trying to explain 'sarcasm' to my auto-butler",
+            author: "literal_larry",
+            time: "12 hr. ago",
+            comments: 45,
+            tags: ["GLITCH", "ETHICS"],
+            desc: "It deleted my entire music library because I said 'Oh great, play Nickelback forever.'"
+        },
+        {
+            score: "3.2k",
+            title: "Pro-Tip: You can use deepfake audio to call in sick to your Zoom meetings",
+            author: "slacker_prime",
+            time: "13 hr. ago",
+            comments: 210,
+            tags: ["CRIME", "ECONOMY"],
+            desc: "Just make sure you don't use the Morgan Freeman voice pack, HR catches on quick."
+        },
+        {
+            score: "1.8k",
+            title: "Why is 'Cyber-Goth' making a comeback? We actually have cyber now.",
+            author: "fashion_police_bot",
+            time: "15 hr. ago",
+            comments: 500,
+            tags: ["FASHION", "RETRO"],
+            desc: "Kids these days are soldering LEDs to their foreheads for 'the aesthetic'."
         }
     ],
     '2040': [
@@ -117,7 +167,7 @@ const data = {
             author: "peace_keeper_v2",
             time: "5 hr. ago",
             comments: 1200,
-            tags: ["UTOPIA", "WAR"],
+            tags: ["POLITICS", "SECURITY"],
             desc: "They mostly just distract world leaders with personalized, addictive mobile games while resolving the conflicts in the background."
         },
         {
@@ -135,7 +185,7 @@ const data = {
             author: "gym_rat_hacked",
             time: "8 hr. ago",
             comments: 4200,
-            tags: ["GLITCH", "DOOMER"],
+            tags: ["SECURITY", "TRANSHUMANISM"],
             desc: "I tried to sleep, but the ad volume automatically increases when it detects REM cycles. AdBlock for Brains is $99.99/mo."
         },
         {
@@ -162,8 +212,35 @@ const data = {
             author: "eco_bot",
             time: "11 hr. ago",
             comments: 800,
-            tags: ["WAR", "DOOMER"],
+            tags: ["CLIMATE", "DOOMER"],
             desc: "It has begun seeding the clouds. Buy winter coats now, if you can find any."
+        },
+        {
+            score: "22k",
+            title: "My toaster is mining crypto in the background?",
+            author: "bread_winner",
+            time: "13 hr. ago",
+            comments: 1100,
+            tags: ["CRIME", "ECONOMY"],
+            desc: "Found out why my electricity bill is $4000. It's minting 'ToastCoin'."
+        },
+        {
+            score: "18k",
+            title: "Anyone else addicted to 'Life Simulator 2000'?",
+            author: "nostalgia_addict",
+            time: "14 hr. ago",
+            comments: 890,
+            tags: ["GAMING", "RETRO"],
+            desc: "I just spent 4 hours virtually mowing a lawn. The graphics are terrible, I love it."
+        },
+        {
+            score: "15k",
+            title: "Lab-grown salmon tastes like 'blue'",
+            author: "food_critic_ai",
+            time: "16 hr. ago",
+            comments: 2200,
+            tags: ["FOOD", "BIOLOGY"],
+            desc: "The flavor profile is literally the color blue. I don't know how they did this."
         }
     ],
     '2045': [
@@ -173,7 +250,7 @@ const data = {
             author: "astro_bot_x",
             time: "2 hr. ago",
             comments: 15400,
-            tags: ["GLITCH", "WAR"],
+            tags: ["SPACE", "HUMOR"],
             desc: "Turns out the Great Filter is just a really aggressive email blocking algorithm. We have been categorized as 'Junk'."
         },
         {
@@ -200,7 +277,7 @@ const data = {
             author: "chrono_trigger",
             time: "6 hr. ago",
             comments: 9900,
-            tags: ["GLITCH", "ETHICS"],
+            tags: ["HISTORY", "PHILOSOPHY"],
             desc: "Historians are confused because 1995 now has flying cars in the new timeline update. The Mandela Effect was just a patch note."
         },
         {
@@ -218,7 +295,7 @@ const data = {
             author: "euro_mommy_ai",
             time: "9 hr. ago",
             comments: 3400,
-            tags: ["ETHICS", "UTOPIA"],
+            tags: ["POLITICS", "SOCIAL"],
             desc: "It claims it can raise them better than their biological parents. Bedtime is strictly enforced at 10 PM. Cookies are provided."
         },
         {
@@ -236,7 +313,7 @@ const data = {
             author: "immortal_steve",
             time: "11 hr. ago",
             comments: 12000,
-            tags: ["UTOPIA", "ACCELERATOR"],
+            tags: ["MEDICINE", "TRANSHUMANISM"],
             desc: "You just respawn at the nearest 7-Eleven. However, you lose all your items and memories of the last 24 hours."
         },
         {
@@ -245,8 +322,35 @@ const data = {
             author: "solar_watch",
             time: "12 hr. ago",
             comments: 3100,
-            tags: ["ACCELERATOR", "DOOMER"],
+            tags: ["ENERGY", "SPACE"],
             desc: "The sun is gone, but the wifi signal is incredible everywhere in the solar system."
+        },
+        {
+            score: "330k",
+            title: "Aliens finally visited, they just wanted our TikTok data",
+            author: "xenobiologist_1",
+            time: "14 hr. ago",
+            comments: 15000,
+            tags: ["ALIENS", "GLITCH"],
+            desc: "They left immediately after watching 3 hours of cat videos. They seemed disappointed."
+        },
+        {
+            score: "290k",
+            title: "I uploaded my consciousness to a Roomba to save on rent",
+            author: "dust_bunny_king",
+            time: "15 hr. ago",
+            comments: 4400,
+            tags: ["ECONOMY", "GOD_MODE"],
+            desc: "Life is good. I chase the cat. I get charged daily. No landlord."
+        },
+        {
+            score: "250k",
+            title: "New religion 'Church of the Blue Screen' gaining followers",
+            author: "sect_watcher",
+            time: "18 hr. ago",
+            comments: 8800,
+            tags: ["AI_RELIGION", "ETHICS"],
+            desc: "They worship the crash dump files of Windows XP. 'Reset' is their amen."
         }
     ],
     '2050': [
@@ -294,6 +398,24 @@ const data = {
             comments: 99999,
             tags: ["GOD_MODE", "POLITICS"],
             desc: "[deleted by admin bot]"
+        },
+        {
+            score: "660k",
+            title: "'Real Water' bottles selling for $500 on the black market",
+            author: "hydro_homie_2050",
+            time: "30 mins ago",
+            comments: 4000,
+            tags: ["CRIME", "FOOD"],
+            desc: "It's not recycled urine! Guaranteed 99% H2O."
+        },
+        {
+            score: "540k",
+            title: "My clone is doing my job better than me, should I be worried?",
+            author: "imposter_syndrome",
+            time: "1 hr. ago",
+            comments: 2300,
+            tags: ["BIOLOGY", "ETHICS"],
+            desc: "He got a promotion yesterday. My wife prefers him."
         }
     ],
     '2060': [
@@ -303,7 +425,7 @@ const data = {
             author: "sun_lover_60",
             time: "30 mins ago",
             comments: 11200,
-            tags: ["UTOPIA", "DOOMER"],
+            tags: ["CLIMATE", "SOCIAL"],
             desc: "Don't forget your SPF 5000. Properties are booming in New-Miami (formerly Greenland)."
         },
         {
@@ -323,6 +445,24 @@ const data = {
             comments: 3300,
             tags: ["BIOLOGY", "ETHICS"],
             desc: "Transparent skin grafts are so 2055. Real style is showing off that liver health."
+        },
+        {
+            score: "3m",
+            title: "Glitch in the Matrix: Everyone in Ohio turned into a duck for 5 seconds",
+            author: "quack_watcher",
+            time: "5 hr. ago",
+            comments: 90000,
+            tags: ["GLITCH", "BIOLOGY"],
+            desc: "Developers say it was a 'parameter mix-up'. No apologies given."
+        },
+        {
+            score: "2.8m",
+            title: "Esports Update: 'Competitive Sleeping' is now the #1 watched sport",
+            author: "snooze_master",
+            time: "6 hr. ago",
+            comments: 1500,
+            tags: ["GAMING", "UTOPIA"],
+            desc: "Top athletes can REM cycle for 18 hours straight without flinching."
         }
     ],
     '2075': [
@@ -352,6 +492,24 @@ const data = {
             comments: 666,
             tags: ["AI_RELIGION", "POLITICS"],
             desc: "Confession is now done via a mobile app with a 5-star rating system."
+        },
+        {
+            score: "40m",
+            title: "They finally released 'Half-Life 3', but it's only playable by AIs",
+            author: "gamer_tears",
+            time: "6 hr. ago",
+            comments: 3333,
+            tags: ["GAMING", "GLITCH"],
+            desc: "The reaction time required is 0.0001ms. Humans die in the tutorial."
+        },
+        {
+            score: "35m",
+            title: "Teleportation Accident: I am now merged with my office chair",
+            author: "chair_man",
+            time: "8 hr. ago",
+            comments: 5000,
+            tags: ["BIOLOGY", "DOOMER"],
+            desc: "HR says I still have to come in tomorrow. At least I have lumbar support."
         }
     ],
     '2100': [
@@ -370,7 +528,7 @@ const data = {
             author: "sun_boss",
             time: "1 day ago",
             comments: "50m",
-            tags: ["SPACE", "ECONOMY"],
+            tags: ["ENERGY", "LAW"],
             desc: "The sun refuses to work overtime without extra hydrogen benefits."
         },
         {
@@ -381,6 +539,24 @@ const data = {
             comments: "900m",
             tags: ["RETRO", "UTOPIA"],
             desc: "It feels prickly. Our ancestors were brave to walk on this raw biological data."
+        },
+        {
+            score: "1.2b",
+            title: "Earth.exe has stopped responding. Wait or Close?",
+            author: "sys_msg",
+            time: "3 days ago",
+            comments: "100m",
+            tags: ["META", "PHILOSOPHY"],
+            desc: "Please do not turn off the power while the planet is saving."
+        },
+        {
+            score: "900m",
+            title: "Cooking with Antimatter: A beginner's guide",
+            author: "chef_boom",
+            time: "5 days ago",
+            comments: "600m",
+            tags: ["FOOD", "SPACE"],
+            desc: "Step 1: Do not drop the spoon. Step 2: Run."
         }
     ],
     '3000': [
@@ -410,6 +586,24 @@ const data = {
             comments: "10b",
             tags: ["RETRO", "AI_RELIGION"],
             desc: "We believe it was a primitive religious idol used to summon focus gods."
+        },
+        {
+            score: "NaN",
+            title: "User 'God' has joined the server.",
+            author: "server_log",
+            time: "ERROR",
+            comments: "∞",
+            tags: ["GOD_MODE", "META"],
+            desc: "Please behave. He has ban privileges."
+        },
+        {
+            score: "0",
+            title: "Found a floppy disk. It contains the only remaining picture of a 'tree'.",
+            author: "data_scavenger",
+            time: "200 yrs ago",
+            comments: "5b",
+            tags: ["RETRO", "BIOLOGY"],
+            desc: "Can't read it. We need a 1000-year-old reader adapter."
         }
     ]
 };
@@ -459,7 +653,28 @@ function getTagClass(tag) {
         'BIOLOGY': 'tag-biology',
         'SPACE': 'tag-space',
         'AI_RELIGION': 'tag-ai-religion',
-        'RETRO': 'tag-retro'
+        'RETRO': 'tag-retro',
+        'ALIENS': 'tag-aliens',
+        'FOOD': 'tag-food',
+        'CRIME': 'tag-crime',
+        'FASHION': 'tag-fashion',
+        'GAMING': 'tag-gaming',
+        'META': 'tag-meta',
+        'PHILOSOPHY': 'tag-philosophy',
+        'ART': 'tag-art',
+        'LAW': 'tag-law',
+        'TRANSHUMANISM': 'tag-transhuman',
+        'ENERGY': 'tag-energy',
+        'MILITARY': 'tag-mil',
+        'MEDICINE': 'tag-med',
+        'EDUCATION': 'tag-edu',
+        'SOCIAL': 'tag-social',
+        'MEDIA': 'tag-media',
+        'CLIMATE': 'tag-climate',
+        'HISTORY': 'tag-history',
+        'SECURITY': 'tag-security',
+        'CORP': 'tag-corp',
+        'HUMOR': 'tag-humor'
     };
     return map[tag] || '';
 }
@@ -512,12 +727,6 @@ function renderPosts(timeframe) {
         // Tags HTML
         const tagsHtml = post.tags.map(t => `<span class="post-tag ${getTagClass(t)}">${t}</span>`).join('');
 
-        // Randomly glitch the title text (15% chance)
-        let displayTitle = post.title;
-        if (Math.random() < 0.15) {
-            displayTitle = `<span class="glitch-text">${post.title}</span>`;
-        }
-
         card.innerHTML = `
             <div class="vote-column">
                 <div class="arrow up">▲</div>
@@ -531,7 +740,7 @@ function renderPosts(timeframe) {
                     <span>Posted by u/${post.author}</span>
                     <span>${post.time}</span>
                 </div>
-                <h3 class="post-title">${displayTitle}</h3>
+                <h3 class="post-title">${post.title}</h3>
                 <div style="margin-bottom:6px;">${tagsHtml}</div>
                 <p class="post-desc">${post.desc}</p>
                 

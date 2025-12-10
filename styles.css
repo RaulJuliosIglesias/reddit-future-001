@@ -318,6 +318,132 @@ body {
     font-family: "Courier New", Courier, monospace;
 }
 
+.tag-aliens {
+    background-color: #33ff00;
+    color: #000;
+    border-color: #1a8000;
+}
+
+.tag-food {
+    background-color: #553311;
+    color: #ffbb88;
+    border-color: #331100;
+}
+
+.tag-crime {
+    background-color: #330000;
+    color: #ff5555;
+    border-color: #550000;
+}
+
+.tag-fashion {
+    background-color: #330033;
+    color: #ff88ff;
+    border-color: #550055;
+}
+
+.tag-gaming {
+    background-color: #000055;
+    color: #8888ff;
+    border-color: #000033;
+}
+
+.tag-meta {
+    background-color: #111;
+    color: #fff;
+    border: 1px dashed #666;
+}
+
+.tag-philosophy {
+    background-color: #2c003e;
+    color: #d4aaff;
+    border-color: #52007a;
+}
+
+.tag-art {
+    background-color: #3e002a;
+    color: #ffaad4;
+    border-color: #7a0052;
+}
+
+.tag-law {
+    background-color: #001a3e;
+    color: #aaccff;
+    border-color: #00337a;
+}
+
+.tag-transhuman {
+    background-color: #003e3e;
+    color: #aaffff;
+    border-color: #007a7a;
+}
+
+.tag-energy {
+    background-color: #3e2a00;
+    color: #ffccaa;
+    border-color: #7a5200;
+}
+
+.tag-mil {
+    background-color: #1a1a1a;
+    color: #ff5555;
+    border-color: #333333;
+}
+
+.tag-med {
+    background-color: #003e1a;
+    color: #aaffcc;
+    border-color: #007a33;
+}
+
+.tag-edu {
+    background-color: #3e3e00;
+    color: #ffffaa;
+    border-color: #7a7a00;
+}
+
+.tag-social {
+    background-color: #002a3e;
+    color: #aae3ff;
+    border-color: #00527a;
+}
+
+.tag-media {
+    background-color: #2a003e;
+    color: #e3aaff;
+    border-color: #52007a;
+}
+
+.tag-climate {
+    background-color: #003e05;
+    color: #aaffb0;
+    border-color: #007a0a;
+}
+
+.tag-history {
+    background-color: #3e1500;
+    color: #ffbbaa;
+    border-color: #7a2900;
+}
+
+.tag-security {
+    background-color: #000000;
+    color: #aaaaaa;
+    border: 1px solid #444;
+}
+
+.tag-corp {
+    background-color: #151525;
+    color: #aaaaff;
+    border-color: #2a2a4a;
+}
+
+.tag-humor {
+    background-color: #3e003e;
+    color: #ff55ff;
+    border-color: #7a007a;
+}
+
 /* Sponsored/Ad Post Styling */
 .post-card.sponsored {
     border: 1px solid #FFD700;
@@ -474,4 +600,164 @@ body {
 .stat-label {
     font-size: 12px;
     color: var(--color-text-meta);
+}
+
+/* Footer structure */
+.main-footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--color-border);
+    margin-top: 40px;
+    color: var(--color-text-meta);
+    background-color: var(--color-body);
+}
+
+.footer-text {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.footer-links a {
+    color: var(--color-blue-link);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--color-border);
+}
+
+/* Nav Button */
+.nav-btn {
+    margin-left: auto;
+    background-color: transparent;
+    border: 1px solid transparent;
+    /* Minimalist default */
+    color: var(--color-text-meta);
+    padding: 8px 16px;
+    border-radius: 99px;
+    /* Pill shape */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    color: var(--color-primary-orange);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: var(--color-body);
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.close-modal {
+    color: var(--color-text-meta);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.close-modal:hover {
+    color: var(--color-text-title);
+}
+
+.modal-content h2 {
+    color: var(--color-text-title);
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+.modal-content p {
+    color: var(--color-text-body);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.modal-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+.modal-footer-text {
+    font-size: 12px !important;
+    color: var(--color-text-meta) !important;
+    text-align: center !important;
+    font-style: italic;
+    border-top: 1px solid var(--color-border);
+    padding-top: 16px;
 }
