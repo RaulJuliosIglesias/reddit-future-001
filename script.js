@@ -21,6 +21,15 @@ window.onclick = function (event) {
     }
 }
 
+// Scroll Tabs Function
+function scrollTabs(direction) {
+    const container = document.getElementById('tabs-scroll');
+    if (container) {
+        container.scrollBy({ left: direction * 150, behavior: 'smooth' });
+    }
+}
+
+
 // Data Models - Realistic AI Timeline 2035-2100
 const data = {
     '2035': [

@@ -108,12 +108,50 @@ body {
     }
 }
 
-/* Tabs */
-.tabs-container {
+/* Tabs Wrapper with Arrows */
+.tabs-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 8px;
     margin-bottom: 16px;
+    background-color: var(--color-body);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.scroll-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-body);
+    color: var(--color-text-title);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.scroll-btn:hover {
+    background-color: var(--color-primary-orange);
+    border-color: var(--color-primary-orange);
+}
+
+.tabs-container {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    flex: 1;
+}
+
+.tabs-container::-webkit-scrollbar {
+    display: none;
 }
 
 .tab-btn {
@@ -394,6 +432,310 @@ body {
 .tag-politics {
     background-color: #2b0a0a;
     color: #ffb3b3;
+}
+
+/* AI-Specific Tags */
+.tag-agi {
+    background: linear-gradient(135deg, #1a0033, #330066);
+    color: #ff00ff;
+    font-weight: 800;
+}
+
+.tag-asi {
+    background: linear-gradient(135deg, #000033, #000066);
+    color: #00ffff;
+    font-weight: 800;
+}
+
+.tag-agi-risk {
+    background-color: #330011;
+    color: #ff4466;
+}
+
+.tag-asi-risk {
+    background-color: #110033;
+    color: #ff44ff;
+}
+
+.tag-agi-safety {
+    background-color: #003311;
+    color: #44ff66;
+}
+
+.tag-agi-alignment {
+    background-color: #001133;
+    color: #44aaff;
+}
+
+.tag-agi-governance {
+    background-color: #1a1a00;
+    color: #ffcc00;
+}
+
+.tag-open-source-ai {
+    background-color: #0a2b0a;
+    color: #55ff55;
+}
+
+.tag-open-source-agi {
+    background-color: #0a330a;
+    color: #00ff88;
+    font-weight: 800;
+}
+
+.tag-open-weights {
+    background-color: #1a2b1a;
+    color: #aaffaa;
+}
+
+.tag-closed-source-ai {
+    background-color: #1a0a0a;
+    color: #ff8888;
+}
+
+.tag-biglabs-ai {
+    background-color: #2b1a00;
+    color: #ffaa44;
+}
+
+.tag-decentralized-ai {
+    background-color: #001a2b;
+    color: #44aaff;
+}
+
+.tag-on-device-ai {
+    background-color: #1a1a2b;
+    color: #aaaaff;
+}
+
+.tag-edge-ai {
+    background-color: #0a1a1a;
+    color: #88ffff;
+}
+
+.tag-ai-accelerationism {
+    background-color: #1a2b0a;
+    color: #aaff44;
+    font-weight: 800;
+}
+
+.tag-ai-decelerationism {
+    background-color: #2b1a0a;
+    color: #ffaa44;
+}
+
+.tag-ai-pause {
+    background-color: #2b0a0a;
+    color: #ff4444;
+    font-weight: 800;
+}
+
+.tag-slow-down-ai {
+    background-color: #2b1a1a;
+    color: #ff8866;
+}
+
+.tag-ai-moratorium {
+    background-color: #330000;
+    color: #ff0000;
+}
+
+.tag-ai-doomer {
+    background-color: #1a0000;
+    color: #ff3333;
+}
+
+.tag-ai-skeptic {
+    background-color: #1a1a0a;
+    color: #cccc88;
+}
+
+.tag-ai-caution {
+    background-color: #2b2b0a;
+    color: #ffff66;
+}
+
+.tag-ai-optimist {
+    background-color: #0a2b0a;
+    color: #66ff66;
+}
+
+.tag-ai-utopian {
+    background-color: #0a1a2b;
+    color: #66aaff;
+}
+
+.tag-ai-protopian {
+    background-color: #0a2b2b;
+    color: #66ffff;
+}
+
+.tag-ai-realist {
+    background-color: #1a1a1a;
+    color: #cccccc;
+}
+
+.tag-ai-governance {
+    background-color: #1a0a2b;
+    color: #aa66ff;
+}
+
+.tag-ai-policy {
+    background-color: #0a0a2b;
+    color: #6666ff;
+}
+
+.tag-ai-regulation {
+    background-color: #2b0a1a;
+    color: #ff66aa;
+}
+
+.tag-ai-alignment-research {
+    background-color: #0a2b1a;
+    color: #66ffaa;
+}
+
+.tag-ai-safety-labs {
+    background-color: #001a00;
+    color: #00ff00;
+}
+
+.tag-ai-lab-competition {
+    background-color: #2b1a0a;
+    color: #ffcc44;
+}
+
+.tag-scaling-maximalism {
+    background-color: #002b00;
+    color: #00ff44;
+    font-weight: 800;
+}
+
+.tag-scaling-skeptic {
+    background-color: #2b2b00;
+    color: #ffff44;
+}
+
+.tag-caps-agi {
+    background-color: #2b0000;
+    color: #ff6666;
+}
+
+.tag-no-caps-agi {
+    background-color: #002b00;
+    color: #66ff66;
+}
+
+.tag-human-in-loop {
+    background-color: #0a1a2b;
+    color: #88ccff;
+}
+
+.tag-human-centric-ai {
+    background-color: #1a2b2b;
+    color: #88ffff;
+}
+
+.tag-full-automation {
+    background-color: #1a1a2b;
+    color: #8888ff;
+}
+
+.tag-post-work-ai {
+    background-color: #2b1a2b;
+    color: #ff88ff;
+}
+
+.tag-ubi-with-ai {
+    background-color: #0a2b1a;
+    color: #88ffaa;
+}
+
+.tag-ai-for-labor {
+    background-color: #2b2b1a;
+    color: #ffffaa;
+}
+
+.tag-ai-for-elites {
+    background-color: #2b0a1a;
+    color: #ff88aa;
+}
+
+.tag-ai-common-good {
+    background-color: #0a2b2b;
+    color: #88ffff;
+}
+
+.tag-ai-national-security {
+    background-color: #0a0a1a;
+    color: #8888aa;
+}
+
+.tag-ai-military-use {
+    background-color: #1a0a0a;
+    color: #aa5555;
+}
+
+.tag-ai-civilian-use {
+    background-color: #0a1a0a;
+    color: #55aa55;
+}
+
+.tag-open-science-ai {
+    background-color: #0a1a2b;
+    color: #55aaff;
+}
+
+.tag-ai-ip-war {
+    background-color: #2b1a0a;
+    color: #ffaa55;
+}
+
+.tag-data-commons {
+    background-color: #0a2b0a;
+    color: #55ff55;
+}
+
+.tag-data-monopoly {
+    background-color: #2b0a0a;
+    color: #ff5555;
+}
+
+.tag-ai-xrisk {
+    background-color: #330000;
+    color: #ff0000;
+    font-weight: 800;
+}
+
+.tag-ai-misuse {
+    background-color: #2b1a0a;
+    color: #ff9944;
+}
+
+.tag-ai-misalignment {
+    background-color: #2b0a1a;
+    color: #ff4499;
+}
+
+.tag-ai-evals {
+    background-color: #1a1a2b;
+    color: #aaaaff;
+}
+
+.tag-rogue-agents {
+    background-color: #2b0000;
+    color: #ff3333;
+    font-weight: 800;
+}
+
+.tag-agentic-ai {
+    background-color: #0a0a2b;
+    color: #6666ff;
+}
+
+.tag-tool-ai {
+    background-color: #1a2b1a;
+    color: #88ff88;
 }
 
 .post-desc {
