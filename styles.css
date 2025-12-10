@@ -1,16 +1,31 @@
 :root {
-    --color-canvas-bg: #DAE0E6;
-    --color-body: #FFFFFF;
-    --color-header-bg: #FFFFFF;
-    --color-primary-orange: #FF4500;
-    --color-text-title: #222222;
-    --color-text-body: #1c1c1c;
-    --color-text-meta: #787C7E;
-    --color-border: #CCCCCC;
-    --color-vote-bg: #F8F9FA;
-    --color-vote-arrow: #878A8C;
-    --color-hover-bg: #F6F7F8;
-    --font-family: Arial, sans-serif;
+    /* Reddit Dark Mode Palette */
+    --color-canvas-bg: #030303;
+    /* Deep black/grey background */
+    --color-body: #1A1A1B;
+    /* Content background (cards) */
+    --color-header-bg: #1A1A1B;
+    /* Navbar background */
+    --color-border: #343536;
+    /* Subtle dark border */
+    --color-text-title: #D7DADC;
+    /* Primary text */
+    --color-text-body: #D7DADC;
+    /* Body text (same as primary often) */
+    --color-text-meta: #818384;
+    /* Secondary text/metadata */
+    --color-primary-orange: #D93900;
+    /* Reddit Orange */
+    --color-vote-bg: #151516;
+    /* Vote column background */
+    --color-vote-arrow: #818384;
+    /* Neutral arrow color */
+    --color-hover-bg: #272729;
+    /* Hover state */
+    --color-blue-link: #4FBCFF;
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 * {
@@ -24,6 +39,7 @@ body {
     font-family: var(--font-family);
     color: var(--color-text-body);
     overflow-y: scroll;
+    scrollbar-color: var(--color-border) var(--color-canvas-bg);
 }
 
 /* Navbar */
@@ -33,7 +49,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--color-border);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -56,13 +72,14 @@ body {
     justify-content: center;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar-title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--color-text-title);
+    letter-spacing: 0.5px;
 }
 
 /* Main container */
@@ -71,17 +88,18 @@ body {
     margin: 20px auto;
     display: flex;
     gap: 24px;
-    padding: 0 10px;
+    padding: 0 24px;
 }
 
 .main-content {
     flex: 1;
-    min-width: 0; /* Fix flex overflow */
+    min-width: 0;
 }
 
 .sidebar {
     width: 312px;
     display: none;
+    flex-shrink: 0;
 }
 
 @media (min-width: 960px) {
@@ -92,35 +110,37 @@ body {
 
 /* Tabs */
 .tabs-container {
-    background-color: var(--color-header-bg);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
     margin-bottom: 16px;
-    padding: 10px 12px;
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
 .tab-btn {
-    background: none;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    /* Pill shape */
     font-size: 14px;
     font-weight: 700;
     color: var(--color-text-meta);
     cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
+    transition: all 0.2s;
 }
 
 .tab-btn:hover {
     background-color: var(--color-hover-bg);
+    color: var(--color-text-title);
 }
 
 .tab-btn.active {
     background-color: var(--color-hover-bg);
-    color: var(--color-primary-orange);
+    color: var(--color-text-title);
+    border: 1px solid transparent;
+    /* or keep consistent */
+    background-color: #272729;
+    /* Explicit active bg */
 }
 
 /* Post List */
@@ -132,27 +152,27 @@ body {
 
 .post-card {
     background-color: var(--color-body);
-    border: 1px solid var(--color-border); /* Thinner styling */
-    border-radius: 4px; /* Classic radius */
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
     display: flex;
     cursor: pointer;
     transition: border-color 0.2s;
+    overflow: hidden;
+    /* For hover effect containment */
 }
 
 .post-card:hover {
-    border-color: #898989;
+    border-color: #818384;
 }
 
 .vote-column {
     width: 40px;
     background-color: var(--color-vote-bg);
-    border-right: 0px solid transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 8px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-right: 0;
 }
 
 .arrow {
@@ -161,22 +181,26 @@ body {
     line-height: 1;
     cursor: pointer;
     user-select: none;
+    font-family: monospace;
+    /* Helper for simple ASCII arrows */
 }
 
 .arrow:hover {
-    color: var(--color-primary-orange); 
-    /* Only upvote usually turns orange, downvote blue, but keeping simple orange theme */
+    color: var(--color-primary-orange);
+    background-color: rgba(217, 57, 0, 0.1);
+    border-radius: 2px;
 }
 
 .vote-count {
     font-size: 12px;
     font-weight: 700;
     margin: 4px 0;
-    color: var(--color-text-body);
+    color: var(--color-text-title);
 }
 
 .post-content {
-    padding: 8px;
+    padding: 8px 16px 8px 8px;
+    /* Slightly tighter left padding */
     flex: 1;
 }
 
@@ -191,54 +215,94 @@ body {
 
 .subreddit-prefix {
     font-weight: 700;
-    color: var(--color-text-body);
+    color: var(--color-text-title);
+}
+
+.subreddit-prefix:hover {
+    text-decoration: underline;
 }
 
 .post-title {
     font-size: 18px;
     font-weight: 500;
     color: var(--color-text-title);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 22px;
 }
 
+/* Tags */
 .post-tag {
     display: inline-block;
-    background-color: #eee;
-    color: #444;
     font-size: 11px;
-    padding: 2px 6px;
+    padding: 2px 8px;
     border-radius: 12px;
-    margin-right: 5px;
-    font-weight: 500;
+    margin-right: 6px;
+    font-weight: 700;
     vertical-align: middle;
+    border: 1px solid transparent;
 }
 
-.tag-doomer { background-color: #ffcccc; color: #a00; }
-.tag-accelerator { background-color: #ccffcc; color: #006600; }
-.tag-ethics { background-color: #e6ccff; color: #4b0082; }
-.tag-glitch { background-color: #333; color: #0f0; }
-.tag-economy { background-color: #fff2cc; color: #996600; }
-.tag-war { background-color: #550000; color: #ffcccc; }
-.tag-utopia { background-color: #ccf2ff; color: #005580; }
+/* Darker, muted tag colors for dark mode realism */
+.tag-doomer {
+    background-color: #380d0d;
+    color: #ff8b8b;
+    border-color: #5c1818;
+}
+
+.tag-accelerator {
+    background-color: #0d2b0d;
+    color: #8bff8b;
+    border-color: #185c18;
+}
+
+.tag-ethics {
+    background-color: #1f1133;
+    color: #d6b3ff;
+    border-color: #3e2266;
+}
+
+.tag-glitch {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border-color: #333;
+    font-family: monospace;
+}
+
+.tag-economy {
+    background-color: #332b00;
+    color: #fff2cc;
+    border-color: #665700;
+}
+
+.tag-war {
+    background-color: #2b0a0a;
+    color: #ffb3b3;
+    border-color: #551414;
+}
+
+.tag-utopia {
+    background-color: #0a1f2b;
+    color: #b3e6ff;
+    border-color: #143e55;
+}
 
 .post-desc {
     font-size: 14px;
     color: var(--color-text-body);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 21px;
 }
 
 .post-footer-btns {
     display: flex;
-    gap: 8px;
+    gap: 4px;
 }
 
 .footer-btn {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 4px 8px;
+    padding: 8px;
     border-radius: 2px;
     font-size: 12px;
     font-weight: 700;
@@ -246,6 +310,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .footer-btn:hover {
@@ -262,11 +327,12 @@ body {
 }
 
 .widget-header {
-    background-color: var(--color-primary-orange); /* Or generic blue/grey, mimicking requirement */
-    height: 30px; /* Slim header for 'About' often has image, simple here */
+    background-color: var(--color-primary-orange);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), transparent);
+    height: 40px;
     padding: 12px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-weight: 700;
     color: white;
     font-size: 14px;
@@ -279,34 +345,40 @@ body {
 .widget-title {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: var(--color-text-title);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 8px;
 }
 
 .widget-text {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 20px;
     color: var(--color-text-body);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .community-stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
     border-top: 1px solid var(--color-border);
     font-size: 14px;
 }
 
 .stat-item {
-    text-align: center;
+    text-align: left;
+    flex: 1;
 }
 
 .stat-num {
     font-weight: 700;
     display: block;
+    font-size: 16px;
+    color: var(--color-text-title);
 }
+
 .stat-label {
     font-size: 12px;
     color: var(--color-text-meta);
