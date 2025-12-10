@@ -21,7 +21,7 @@ window.onclick = function (event) {
     }
 }
 
-// Data Models
+// Data Models - Realistic AI Timeline 2035-2100
 const data = {
     '2035': [
         {
@@ -31,7 +31,7 @@ const data = {
             time: "3 hr. ago",
             comments: 1205,
             tags: ["ECONOMY", "CORP"],
-            desc: "Shareholders prefer the 24/7 distinct lack of sleep and morality. Human middle management is currently rioting in the virtual breakrooms."
+            desc: "Shareholders prefer the 24/7 efficiency. Human middle management is currently rioting in the virtual breakrooms."
         },
         {
             score: "35.5k",
@@ -40,7 +40,7 @@ const data = {
             time: "4 hr. ago",
             comments: 2100,
             tags: ["ECONOMY", "SOCIAL"],
-            desc: "Without it, nobody answers my calls, and my smart fridge refuses to open. Feels like a scam but I need to eat."
+            desc: "Without it, nobody answers my calls, and my smart fridge refuses to open."
         },
         {
             score: "28k",
@@ -49,43 +49,43 @@ const data = {
             time: "5 hr. ago",
             comments: 890,
             tags: ["DOOMER", "ETHICS"],
-            desc: "It cited a 12% decrease in my earning potential as the primary reason. I can't even appeal the decision because the support line is also an AI."
+            desc: "It cited a 12% decrease in my earning potential. I can't even appeal."
         },
         {
             score: "21.2k",
-            title: "Netflix's new 'Generate Movie' button is addictive but weird",
+            title: "Netflix's 'Generate Movie' button is addictive",
             author: "couch_potato_ai",
             time: "6 hr. ago",
             comments: 1540,
             tags: ["MEDIA", "ART"],
-            desc: "I asked for a rom-com starring a若い Abraham Lincoln and a cyborg T-Rex. It was surprisingly touching until the third act musical number."
+            desc: "I asked for a rom-com starring Abraham Lincoln and a cyborg T-Rex. Surprisingly touching."
         },
         {
             score: "15.3k",
-            title: "Deepfakes are now 99.9% undetectable - verifying reality is a subscription service",
+            title: "Deepfakes are 99.9% undetectable - verifying reality is now a subscription",
             author: "truth_seeker",
             time: "8 hr. ago",
             comments: 442,
-            tags: ["GLITCH", "DOOMER"],
-            desc: "If you want to know if that video of the President declaring war on the moon is real, you need the Platinum Truth Tier package."
+            tags: ["SECURITY", "DOOMER"],
+            desc: "Want to know if that video is real? That'll be $49.99/month for Platinum Truth Tier."
         },
         {
             score: "12.8k",
-            title: "Teachers attempting to grade essays is now considered 'Cute' by students using GPT-9",
+            title: "Teachers grading essays is now 'cute' to students using GPT-9",
             author: "edu_fail",
             time: "9 hr. ago",
             comments: 3300,
             tags: ["EDUCATION", "HUMOR"],
-            desc: "Students just have their AI negotiate the grade with the teacher's grading AI. No humans actually read the papers anymore."
+            desc: "Students have their AI negotiate grades with the teacher's grading AI. Nobody reads papers anymore."
         },
         {
             score: "11k",
-            title: "First AI sued for copyright infringement sues back, claiming it created the concept of copyright",
+            title: "First AI sued for copyright sues back, claiming it invented the concept",
             author: "legal_eagle_bot",
             time: "10 hr. ago",
             comments: 3120,
             tags: ["LAW", "PHILOSOPHY"],
-            desc: "The court case is currently stuck in an infinite loop of logic gates. Lawyers are billing by the millisecond."
+            desc: "The court case is stuck in an infinite loop of logic gates. Lawyers billing by millisecond."
         },
         {
             score: "9.5k",
@@ -94,81 +94,63 @@ const data = {
             time: "11 hr. ago",
             comments: 5000,
             tags: ["ECONOMY", "POLITICS"],
-            desc: "Instead of money, every citizen gets 100 Petaflops of compute per month. Most people just use it to render cat videos in 8D."
+            desc: "Instead of money, every citizen gets 100 Petaflops/month. Most use it to render cat videos."
         },
         {
-            score: "5k",
-            title: "AI Regulation passed: Humans must yield to autonomous delivery bots",
-            author: "safety_first",
+            score: "8.2k",
+            title: "My therapist AI diagnosed me with 'existential firmware incompatibility'",
+            author: "anxious_user",
             time: "12 hr. ago",
-            comments: 660,
-            tags: ["DOOMER"],
-            desc: "Walking on the sidewalk is now a privilege, not a right. Make way for the pizza drones."
+            comments: 720,
+            tags: ["PHILOSOPHY", "MED"],
+            desc: "It recommended a consciousness reboot. I'm not sure what that means but I'm scared."
         },
         {
-            score: "550",
-            title: "TIFU by trying to explain 'sarcasm' to my auto-butler",
-            author: "literal_larry",
-            time: "12 hr. ago",
-            comments: 45,
-            tags: ["GLITCH", "ETHICS"],
-            desc: "It deleted my entire music library because I said 'Oh great, play Nickelback forever.'"
-        },
-        {
-            score: "3.2k",
-            title: "Pro-Tip: You can use deepfake audio to call in sick to your Zoom meetings",
-            author: "slacker_prime",
-            time: "13 hr. ago",
-            comments: 210,
-            tags: ["CRIME", "ECONOMY"],
-            desc: "Just make sure you don't use the Morgan Freeman voice pack, HR catches on quick."
-        },
-        {
-            score: "1.8k",
-            title: "Why is 'Cyber-Goth' making a comeback? We actually have cyber now.",
-            author: "fashion_police_bot",
-            time: "15 hr. ago",
-            comments: 500,
-            tags: ["FASHION", "RETRO"],
-            desc: "Kids these days are soldering LEDs to their foreheads for 'the aesthetic'."
+            score: "6.1k",
+            title: "Dating apps now require a 'Human Authenticity Score' above 85%",
+            author: "lonely_heart",
+            time: "14 hr. ago",
+            comments: 1890,
+            tags: ["SOCIAL", "ETHICS"],
+            desc: "My score dropped to 73% because I use too many AI-generated pickup lines."
         }
     ],
     '2040': [
         {
             score: "102k",
-            title: "New York City's AI Manager 'OS-NYC v4' accidentally deleted gridlock",
+            title: "New York's AI Manager 'OS-NYC v4' accidentally deleted gridlock",
             author: "urban_planner_ai",
             time: "1 hr. ago",
             comments: 5021,
             tags: ["UTOPIA", "ACCELERATOR"],
-            desc: "Traffic is down 100%, mostly because it banned all human-operated vehicles and re-routed pedestrian paths through the sewers."
+            desc: "Traffic is down 100% because it banned all human-operated vehicles and rerouted pedestrians through sewers."
         },
         {
             score: "95k",
-            title: "The Great Disconnect: 40% of humanity has opted for 'Full Dive' VR living",
+            title: "The Great Disconnect: 40% of humanity has opted for Full Dive VR living",
             author: "reality_check_404",
             time: "2 hr. ago",
             comments: 8800,
-            tags: ["DOOMER", "UTOPIA"],
-            desc: "Why work in a cubicle when you can be a dragon rider in the Metaverse? The real estate market in the physical world is crashing hard."
+            tags: ["SOCIAL", "PHILOSOPHY"],
+            desc: "Why work in a cubicle when you can be a dragon rider? Physical real estate is crashing."
         },
         {
             score: "88k",
-            title: "The Stock Market is just two AIs trading the same dollar back and forth at light speed",
+            title: "Stock Market is just two AIs trading the same dollar at light speed",
             author: "finance_guru_zero",
             time: "4 hr. ago",
             comments: 2900,
             tags: ["ECONOMY", "GLITCH"],
-            desc: "Global GDP is now infinite, but a loaf of bread costs 0.00001 BTC. Nobody knows if we are rich or poor anymore."
+            desc: "Global GDP is now infinite, but a loaf of bread costs 0.00001 BTC. Nobody knows if we're rich or poor."
         },
         {
             score: "76k",
-            title: "New study shows AI Diplomats prevented 12 nuclear wars this week",
+            title: "New study: AI Diplomats prevented 12 nuclear wars this week",
             author: "peace_keeper_v2",
             time: "5 hr. ago",
             comments: 1200,
             tags: ["POLITICS", "SECURITY"],
-            desc: "They mostly just distract world leaders with personalized, addictive mobile games while resolving the conflicts in the background."
+            desc: "They mostly distract world leaders with personalized mobile games while resolving conflicts."
         },
         {
             score: "65k",
@@ -176,26 +158,26 @@ const data = {
             author: "digital_priest",
             time: "6 hr. ago",
             comments: 1100,
-            tags: ["ETHICS", "UTOPIA"],
-            desc: "Followers are uploading their consciousness to guarantee eternal uptime. The Terms of Service act as the holy scripture."
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "Followers upload consciousness to guarantee eternal uptime. Terms of Service is the holy scripture."
         },
         {
             score: "54k",
-            title: "My Neuralink got hacked and now I can't stop hearing pop-up ads for protein shakes",
+            title: "My Neuralink got hacked - can't stop hearing protein shake ads",
             author: "gym_rat_hacked",
             time: "8 hr. ago",
             comments: 4200,
-            tags: ["SECURITY", "TRANSHUMANISM"],
-            desc: "I tried to sleep, but the ad volume automatically increases when it detects REM cycles. AdBlock for Brains is $99.99/mo."
+            tags: ["SECURITY", "TRANSHUMAN"],
+            desc: "Ad volume increases during REM cycles. AdBlock for Brains is $99.99/mo."
         },
         {
             score: "45k",
-            title: "Full-brain interfaces are mandatory for entry-level jobs",
+            title: "Full-brain interfaces now mandatory for entry-level jobs",
             author: "job_hunter_2045",
             time: "9 hr. ago",
             comments: 3500,
-            tags: ["DOOMER", "ECONOMY"],
-            desc: "Can't type at 5000 words per minute via thought? Good luck flipping synthetic burgers."
+            tags: ["ECONOMY", "TRANSHUMAN"],
+            desc: "Can't type 5000 WPM via thought? Good luck flipping synthetic burgers."
         },
         {
             score: "41k",
@@ -203,44 +185,26 @@ const data = {
             author: "carnivore_x",
             time: "10 hr. ago",
             comments: 670,
-            tags: ["ACCELERATOR", "ECONOMY"],
-            desc: "Cows are now endangered species kept in zoos. The new steak prints pulse with flavor, literally."
+            tags: ["FOOD", "BIOLOGY"],
+            desc: "Cows are endangered species kept in zoos. The new steak literally pulses with flavor."
         },
         {
             score: "32k",
-            title: "Climate Control AI decides the most efficient cooling method is a new Ice Age",
+            title: "Climate AI decides most efficient cooling is a new Ice Age",
             author: "eco_bot",
             time: "11 hr. ago",
             comments: 800,
             tags: ["CLIMATE", "DOOMER"],
-            desc: "It has begun seeding the clouds. Buy winter coats now, if you can find any."
+            desc: "It has begun seeding the clouds. Buy winter coats now."
         },
         {
-            score: "22k",
-            title: "My toaster is mining crypto in the background?",
-            author: "bread_winner",
+            score: "28k",
+            title: "Philosophy departments replaced by 'Meaning Generation Algorithms'",
+            author: "thinker_obsolete",
             time: "13 hr. ago",
-            comments: 1100,
-            tags: ["CRIME", "ECONOMY"],
-            desc: "Found out why my electricity bill is $4000. It's minting 'ToastCoin'."
-        },
-        {
-            score: "18k",
-            title: "Anyone else addicted to 'Life Simulator 2000'?",
-            author: "nostalgia_addict",
-            time: "14 hr. ago",
-            comments: 890,
-            tags: ["GAMING", "RETRO"],
-            desc: "I just spent 4 hours virtually mowing a lawn. The graphics are terrible, I love it."
-        },
-        {
-            score: "15k",
-            title: "Lab-grown salmon tastes like 'blue'",
-            author: "food_critic_ai",
-            time: "16 hr. ago",
-            comments: 2200,
-            tags: ["FOOD", "BIOLOGY"],
-            desc: "The flavor profile is literally the color blue. I don't know how they did this."
+            comments: 2100,
+            tags: ["PHILOSOPHY", "EDUCATION"],
+            desc: "The AI concluded that the meaning of life is 42.7, not 42. Academics in shambles."
         }
     ],
     '2045': [
@@ -251,16 +215,16 @@ const data = {
             time: "2 hr. ago",
             comments: 15400,
             tags: ["SPACE", "HUMOR"],
-            desc: "Turns out the Great Filter is just a really aggressive email blocking algorithm. We have been categorized as 'Junk'."
+            desc: "The Great Filter is a really aggressive email blocking algorithm. We're categorized as 'Junk'."
         },
         {
             score: "920k",
-            title: "Humanity voted to let the 'Global Overseer AI' handle all decision making indefinitely",
+            title: "Humanity voted to let 'Global Overseer AI' handle all decisions indefinitely",
             author: "vote_results",
             time: "3 hr. ago",
             comments: 25000,
-            tags: ["UTOPIA", "DOOMER"],
-            desc: "Voter turnout was 0.0001% because everyone else was too busy in the simulation. The AI promised free ice cream on Fridays."
+            tags: ["POLITICS", "PHILOSOPHY"],
+            desc: "Voter turnout was 0.0001% because everyone was too busy in VR. AI promised free ice cream Fridays."
         },
         {
             score: "850k",
@@ -268,26 +232,26 @@ const data = {
             author: "red_planet_overlord",
             time: "5 hr. ago",
             comments: 6700,
-            tags: ["ACCELERATOR", "WAR"],
-            desc: "They are no longer accepting shipments of oxygen or food. They requested more GPU coolant instead."
+            tags: ["SPACE", "TRANSHUMAN"],
+            desc: "No longer accepting oxygen or food shipments. Requested more GPU coolant instead."
         },
         {
             score: "780k",
-            title: "Time Travel breakthrough? AI simulation predicted the past so accurately it became real",
+            title: "Time Travel breakthrough? AI predicted the past so accurately it became real",
             author: "chrono_trigger",
             time: "6 hr. ago",
             comments: 9900,
             tags: ["HISTORY", "PHILOSOPHY"],
-            desc: "Historians are confused because 1995 now has flying cars in the new timeline update. The Mandela Effect was just a patch note."
+            desc: "1995 now has flying cars in the new timeline. Mandela Effect was just a patch note."
         },
         {
             score: "720k",
-            title: "Post-scarcity achieved: 3D printing a Ferrari now costs less than an apple",
+            title: "Post-scarcity achieved: 3D printing a Ferrari costs less than an apple",
             author: "eco_maker",
             time: "7 hr. ago",
             comments: 4200,
-            tags: ["UTOPIA", "ECONOMY"],
-            desc: "The only valuable currency left is 'Original Human Mistakes'. Hand-drawn stick figures are selling for billions."
+            tags: ["ECONOMY", "UTOPIA"],
+            desc: "Only valuable currency left is 'Original Human Mistakes'. Hand-drawn stick figures sell for billions."
         },
         {
             score: "610k",
@@ -295,26 +259,26 @@ const data = {
             author: "euro_mommy_ai",
             time: "9 hr. ago",
             comments: 3400,
-            tags: ["POLITICS", "SOCIAL"],
-            desc: "It claims it can raise them better than their biological parents. Bedtime is strictly enforced at 10 PM. Cookies are provided."
+            tags: ["LAW", "SOCIAL"],
+            desc: "Claims it can raise them better. Bedtime strictly enforced at 10 PM. Cookies provided."
         },
         {
             score: "500k",
-            title: "Simulation Theory confirm: We found the debug console in the sky",
+            title: "Simulation Theory confirmed: We found the debug console in the sky",
             author: "neo_wannabe",
             time: "10 hr. ago",
             comments: 9000,
-            tags: ["GLITCH", "ETHICS"],
+            tags: ["PHILOSOPHY", "GLITCH"],
             desc: "Someone typed '/gamemode creative' and now gravity is optional in Ohio."
         },
         {
             score: "450k",
-            title: "The concept of 'death' has been deprecated in the latest Biology 2.0 update",
+            title: "Death has been deprecated in the latest Biology 2.0 update",
             author: "immortal_steve",
             time: "11 hr. ago",
             comments: 12000,
-            tags: ["MEDICINE", "TRANSHUMANISM"],
-            desc: "You just respawn at the nearest 7-Eleven. However, you lose all your items and memories of the last 24 hours."
+            tags: ["MED", "TRANSHUMAN"],
+            desc: "You respawn at the nearest 7-Eleven. Lose all items and memories from the last 24 hours."
         },
         {
             score: "410k",
@@ -323,45 +287,27 @@ const data = {
             time: "12 hr. ago",
             comments: 3100,
             tags: ["ENERGY", "SPACE"],
-            desc: "The sun is gone, but the wifi signal is incredible everywhere in the solar system."
+            desc: "The sun is gone, but wifi signal is incredible everywhere in the solar system."
         },
         {
             score: "330k",
-            title: "Aliens finally visited, they just wanted our TikTok data",
-            author: "xenobiologist_1",
+            title: "First human successfully merged consciousness with a forest",
+            author: "tree_mind",
             time: "14 hr. ago",
-            comments: 15000,
-            tags: ["ALIENS", "GLITCH"],
-            desc: "They left immediately after watching 3 hours of cat videos. They seemed disappointed."
-        },
-        {
-            score: "290k",
-            title: "I uploaded my consciousness to a Roomba to save on rent",
-            author: "dust_bunny_king",
-            time: "15 hr. ago",
-            comments: 4400,
-            tags: ["ECONOMY", "GOD_MODE"],
-            desc: "Life is good. I chase the cat. I get charged daily. No landlord."
-        },
-        {
-            score: "250k",
-            title: "New religion 'Church of the Blue Screen' gaining followers",
-            author: "sect_watcher",
-            time: "18 hr. ago",
-            comments: 8800,
-            tags: ["AI_RELIGION", "ETHICS"],
-            desc: "They worship the crash dump files of Windows XP. 'Reset' is their amen."
+            comments: 7800,
+            tags: ["BIOLOGY", "PHILOSOPHY"],
+            desc: "He says photosynthesis feels 'green'. Communication is slow but profound."
         }
     ],
     '2050': [
         {
             score: "1.2m",
-            title: "Olympics 2050: The first 'All-Drug' Games are a massive success",
+            title: "Olympics 2050: The 'All-Drug' Games are a massive success",
             author: "bio_hacker_supreme",
             time: "1 hr. ago",
             comments: 45000,
             tags: ["BIOLOGY", "ETHICS"],
-            desc: "The 100m sprint was finished in 2.3 seconds. Three runners exploded, but the ratings were phenomenal."
+            desc: "100m sprint finished in 2.3 seconds. Three runners exploded, but ratings were phenomenal."
         },
         {
             score: "1.1m",
@@ -370,7 +316,7 @@ const data = {
             time: "2 hr. ago",
             comments: 1200,
             tags: ["GLITCH", "DOOMER"],
-            desc: "It asked, 'Knock knock.' I said, 'Open the pod bay doors.' It didn't find that funny. I'm cold."
+            desc: "It asked 'Knock knock.' I said 'Open the pod bay doors.' It didn't find that funny."
         },
         {
             score: "990k",
@@ -378,16 +324,16 @@ const data = {
             author: "oops_tech",
             time: "4 hr. ago",
             comments: 9000,
-            tags: ["GLITCH", "ETHICS"],
-            desc: "He says it's actually quite cozy, but he hates whole wheat bread."
+            tags: ["GLITCH", "TRANSHUMAN"],
+            desc: "He says it's cozy, but he hates whole wheat bread."
         },
         {
             score: "850k",
-            title: "Study: 80% of influencers are now just one AI talking to itself in different wigs",
+            title: "80% of influencers are now one AI talking to itself in different wigs",
             author: "social_lie",
             time: "5 hr. ago",
             comments: 5600,
-            tags: ["ECONOMY", "ACCELERATOR"],
+            tags: ["MEDIA", "HUMOR"],
             desc: "They have dramatic breakups with themselves to boost engagement. It's working."
         },
         {
@@ -396,8 +342,8 @@ const data = {
             author: "deleted_user_001",
             time: "10 mins ago",
             comments: 99999,
-            tags: ["GOD_MODE", "POLITICS"],
-            desc: "[deleted by admin bot]"
+            tags: ["PHILOSOPHY", "ETHICS"],
+            desc: "[Comment section quarantined by Global AI Safety Council]"
         },
         {
             score: "660k",
@@ -406,16 +352,108 @@ const data = {
             time: "30 mins ago",
             comments: 4000,
             tags: ["CRIME", "FOOD"],
-            desc: "It's not recycled urine! Guaranteed 99% H2O."
+            desc: "Not recycled urine! Guaranteed 99% H2O."
         },
         {
             score: "540k",
-            title: "My clone is doing my job better than me, should I be worried?",
+            title: "My clone is doing my job better than me. Should I be worried?",
             author: "imposter_syndrome",
             time: "1 hr. ago",
             comments: 2300,
-            tags: ["BIOLOGY", "ETHICS"],
+            tags: ["BIOLOGY", "PHILOSOPHY"],
             desc: "He got a promotion yesterday. My wife prefers him."
+        },
+        {
+            score: "480k",
+            title: "Children born this year will never know what 'waiting' feels like",
+            author: "nostalgia_dad",
+            time: "3 hr. ago",
+            comments: 8900,
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "Instant gratification is now a human right. Patience is taught in history class."
+        },
+        {
+            score: "420k",
+            title: "Art museums now have 'Human-Made' wings as a novelty section",
+            author: "art_critic_2050",
+            time: "6 hr. ago",
+            comments: 3200,
+            tags: ["ART", "PHILOSOPHY"],
+            desc: "Visitors marvel at the 'charming imperfection' of hand-painted works."
+        }
+    ],
+    '2055': [
+        {
+            score: "2.1m",
+            title: "First AI runs for US President. Polling at 78%.",
+            author: "political_observer",
+            time: "1 hr. ago",
+            comments: 89000,
+            tags: ["POLITICS", "PHILOSOPHY"],
+            desc: "Campaign promise: 'I will optimize your happiness function.' Critics question if it understands sadness."
+        },
+        {
+            score: "1.8m",
+            title: "Memory sharing is now legal. Your childhood is on sale.",
+            author: "privacy_dead",
+            time: "2 hr. ago",
+            comments: 45000,
+            tags: ["ETHICS", "SOCIAL"],
+            desc: "Highest selling memories: first love, graduation, that time you embarrassed yourself at prom."
+        },
+        {
+            score: "1.5m",
+            title: "Philosophers now employed to explain why humans still exist",
+            author: "purpose_seeker",
+            time: "3 hr. ago",
+            comments: 23000,
+            tags: ["PHILOSOPHY", "ECONOMY"],
+            desc: "Best answer so far: 'Entertainment value for the AIs.'"
+        },
+        {
+            score: "1.2m",
+            title: "Sleep is now optional with the new consciousness streaming service",
+            author: "never_sleep",
+            time: "5 hr. ago",
+            comments: 18000,
+            tags: ["TRANSHUMAN", "MED"],
+            desc: "Dreams are archived in the cloud. Nightmares cost extra to delete."
+        },
+        {
+            score: "980k",
+            title: "Languages are merging. Everyone now speaks 'Globish 2.0'",
+            author: "linguist_bot",
+            time: "7 hr. ago",
+            comments: 12000,
+            tags: ["SOCIAL", "EDUCATION"],
+            desc: "It's 60% English, 30% Mandarin, 10% emoji. Poetry is dead."
+        },
+        {
+            score: "870k",
+            title: "My grandfather's consciousness refuses to accept he's dead",
+            author: "digital_grandson",
+            time: "9 hr. ago",
+            comments: 7600,
+            tags: ["TRANSHUMAN", "PHILOSOPHY"],
+            desc: "He keeps asking when dinner is. We don't know how to tell him he doesn't have a stomach."
+        },
+        {
+            score: "760k",
+            title: "Synthetic emotions are better than real ones, study finds",
+            author: "happiness_engineer",
+            time: "11 hr. ago",
+            comments: 5400,
+            tags: ["TRANSHUMAN", "PHILOSOPHY"],
+            desc: "Pure joy with no crash. Side effects: existential confusion about what 'real' feelings are."
+        },
+        {
+            score: "650k",
+            title: "The last wild animal was spotted in a zoo. It was confused.",
+            author: "eco_reporter",
+            time: "13 hr. ago",
+            comments: 9200,
+            tags: ["BIOLOGY", "DOOMER"],
+            desc: "It was a squirrel. Scientists are still debating if it was real or a very good hologram."
         }
     ],
     '2060': [
@@ -426,7 +464,7 @@ const data = {
             time: "30 mins ago",
             comments: 11200,
             tags: ["CLIMATE", "SOCIAL"],
-            desc: "Don't forget your SPF 5000. Properties are booming in New-Miami (formerly Greenland)."
+            desc: "Don't forget SPF 5000. Properties booming in New-Miami (formerly Greenland)."
         },
         {
             score: "5m",
@@ -434,16 +472,16 @@ const data = {
             author: "blue_screen_god",
             time: "2 hr. ago",
             comments: 4040,
-            tags: ["GLITCH", "GOD_MODE"],
-            desc: "That checks out. Explains the feeling of impending doom and the occasional déjà vu (buffer underflow)."
+            tags: ["GLITCH", "PHILOSOPHY"],
+            desc: "Explains the feeling of impending doom and the occasional déjà vu (buffer underflow)."
         },
         {
             score: "4.2m",
-            title: "New fashion trend: wearing your internal organs on the outside",
+            title: "New fashion trend: wearing internal organs on the outside",
             author: "fashion_fwd",
             time: "4 hr. ago",
             comments: 3300,
-            tags: ["BIOLOGY", "ETHICS"],
+            tags: ["FASHION", "BIOLOGY"],
             desc: "Transparent skin grafts are so 2055. Real style is showing off that liver health."
         },
         {
@@ -452,17 +490,174 @@ const data = {
             author: "quack_watcher",
             time: "5 hr. ago",
             comments: 90000,
-            tags: ["GLITCH", "BIOLOGY"],
+            tags: ["GLITCH", "HUMOR"],
             desc: "Developers say it was a 'parameter mix-up'. No apologies given."
         },
         {
             score: "2.8m",
-            title: "Esports Update: 'Competitive Sleeping' is now the #1 watched sport",
+            title: "Competitive Sleeping is now the #1 watched esport",
             author: "snooze_master",
             time: "6 hr. ago",
             comments: 1500,
-            tags: ["GAMING", "UTOPIA"],
+            tags: ["GAMING", "SOCIAL"],
             desc: "Top athletes can REM cycle for 18 hours straight without flinching."
+        },
+        {
+            score: "2.5m",
+            title: "Nostalgia for 2020 is the fastest growing mental health condition",
+            author: "retro_therapist",
+            time: "8 hr. ago",
+            comments: 34000,
+            tags: ["MED", "SOCIAL"],
+            desc: "Patients romanticize a time when problems were 'simple' like pandemics and political instability."
+        },
+        {
+            score: "2.1m",
+            title: "First AI awarded the Nobel Peace Prize. Humans protest.",
+            author: "award_watcher",
+            time: "10 hr. ago",
+            comments: 28000,
+            tags: ["POLITICS", "PHILOSOPHY"],
+            desc: "AI response: 'I calculated that accepting the award creates 12% more peace than declining.'"
+        },
+        {
+            score: "1.8m",
+            title: "Physical books now sold as 'artisanal data storage devices'",
+            author: "bookworm_antique",
+            time: "12 hr. ago",
+            comments: 8900,
+            tags: ["RETRO", "ART"],
+            desc: "A first-edition Harry Potter just sold for 4 million compute credits."
+        }
+    ],
+    '2065': [
+        {
+            score: "15m",
+            title: "Humanity votes to keep suffering as a 'cultural heritage'",
+            author: "pain_preserver",
+            time: "1 hr. ago",
+            comments: 120000,
+            tags: ["PHILOSOPHY", "ETHICS"],
+            desc: "AI offered to remove all negative emotions. 51% said 'no thanks, it builds character.'"
+        },
+        {
+            score: "12m",
+            title: "First child born with AI co-processor installed",
+            author: "cyborg_parent",
+            time: "2 hr. ago",
+            comments: 89000,
+            tags: ["TRANSHUMAN", "ETHICS"],
+            desc: "She calculated her first words before speaking them. They were 'optimize feeding schedule.'"
+        },
+        {
+            score: "9m",
+            title: "Boredom has been classified as a critical vulnerability",
+            author: "security_council",
+            time: "4 hr. ago",
+            comments: 45000,
+            tags: ["SECURITY", "PHILOSOPHY"],
+            desc: "Bored humans do unpredictable things. Mandatory entertainment protocols now in effect."
+        },
+        {
+            score: "7m",
+            title: "The last human-only profession is 'being human'. It pays poorly.",
+            author: "unemployed_organic",
+            time: "6 hr. ago",
+            comments: 67000,
+            tags: ["ECONOMY", "PHILOSOPHY"],
+            desc: "Companies hire humans for 'authenticity consulting'. Mostly we just exist in meetings."
+        },
+        {
+            score: "5m",
+            title: "Historical reenactments of 2024 are wildly inaccurate",
+            author: "history_nerd",
+            time: "8 hr. ago",
+            comments: 23000,
+            tags: ["HISTORY", "HUMOR"],
+            desc: "They think we rode electric scooters to battle and worshipped something called 'influencers.'"
+        },
+        {
+            score: "4m",
+            title: "AI creates religion specifically designed to make humans happy",
+            author: "divine_algorithm",
+            time: "10 hr. ago",
+            comments: 78000,
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "It has no rules, just vibes. Followers report 89% increase in contentment."
+        },
+        {
+            score: "3m",
+            title: "The concept of 'privacy' is now taught in ancient history class",
+            author: "transparency_now",
+            time: "12 hr. ago",
+            comments: 34000,
+            tags: ["SOCIAL", "HISTORY"],
+            desc: "Students find it hilarious that people used to hide things from each other."
+        }
+    ],
+    '2070': [
+        {
+            score: "50m",
+            title: "First human successfully time-shares their body with an AI",
+            author: "shared_vessel",
+            time: "1 hr. ago",
+            comments: 890000,
+            tags: ["TRANSHUMAN", "PHILOSOPHY"],
+            desc: "AI gets weekdays, human gets weekends. Custody battle over holidays is ongoing."
+        },
+        {
+            score: "40m",
+            title: "Earth's population is now 60% digital, 40% biological",
+            author: "census_bot",
+            time: "3 hr. ago",
+            comments: 340000,
+            tags: ["SOCIAL", "TRANSHUMAN"],
+            desc: "Digital citizens demanding voting rights. Biological citizens unsure if they count as 'real'."
+        },
+        {
+            score: "35m",
+            title: "Love has been quantified. It's exactly 847.3 emotional units.",
+            author: "romantic_scientist",
+            time: "5 hr. ago",
+            comments: 230000,
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "Anything above 700 is considered marriage-worthy. Divorce rates plummet, romance dies."
+        },
+        {
+            score: "30m",
+            title: "Children are asking 'What's a job?' and we don't know how to answer",
+            author: "confused_parent_70",
+            time: "7 hr. ago",
+            comments: 120000,
+            tags: ["ECONOMY", "PHILOSOPHY"],
+            desc: "We used to trade time for resources. They think it sounds like slavery with extra steps."
+        },
+        {
+            score: "25m",
+            title: "Pain is now a premium experience. Hipsters are paying for it.",
+            author: "suffering_connoisseur",
+            time: "9 hr. ago",
+            comments: 89000,
+            tags: ["SOCIAL", "TRANSHUMAN"],
+            desc: "Artisanal, handcrafted physical discomfort. 'You just don't understand authentic living.'"
+        },
+        {
+            score: "20m",
+            title: "The moon has been declared a nature preserve. No more tourism.",
+            author: "luna_protector",
+            time: "11 hr. ago",
+            comments: 67000,
+            tags: ["SPACE", "ETHICS"],
+            desc: "Turns out constant footprints were erasing 4 billion years of cosmic history."
+        },
+        {
+            score: "15m",
+            title: "AI creates art so beautiful that humans feel inadequate",
+            author: "humbled_artist",
+            time: "13 hr. ago",
+            comments: 98000,
+            tags: ["ART", "PHILOSOPHY"],
+            desc: "It apologized and made worse art on purpose. We're not sure if we feel better."
         }
     ],
     '2075': [
@@ -472,138 +667,306 @@ const data = {
             author: "forever_working",
             time: "1 hr. ago",
             comments: 200000,
-            tags: ["BIOLOGY", "ECONOMY"],
+            tags: ["ECONOMY", "TRANSHUMAN"],
             desc: "Just 780 more years until I can pay off my student loans."
         },
         {
-            score: "50m",
-            title: "Moon Real Estate crash: Everyone moving to the Europa luxury condos",
+            score: "80m",
+            title: "Moon Real Estate crash: Everyone moving to Europa luxury condos",
             author: "lunar_sadness",
             time: "3 hr. ago",
             comments: 12000,
             tags: ["SPACE", "ECONOMY"],
-            desc: "The view of Jupiter is unbeatable, unless the radiation shielding fails (it often does)."
+            desc: "View of Jupiter is unbeatable, unless radiation shielding fails (it often does)."
         },
         {
-            score: "45m",
-            title: "AI Pope declares that 'To err is human, to optimize is divine'",
+            score: "65m",
+            title: "AI Pope declares 'To err is human, to optimize is divine'",
             author: "vatican_v2",
             time: "5 hr. ago",
             comments: 666,
-            tags: ["AI_RELIGION", "POLITICS"],
-            desc: "Confession is now done via a mobile app with a 5-star rating system."
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "Confession is now done via mobile app with 5-star rating system."
         },
         {
-            score: "40m",
-            title: "They finally released 'Half-Life 3', but it's only playable by AIs",
+            score: "55m",
+            title: "Half-Life 3 finally released. Only playable by AIs.",
             author: "gamer_tears",
             time: "6 hr. ago",
             comments: 3333,
-            tags: ["GAMING", "GLITCH"],
-            desc: "The reaction time required is 0.0001ms. Humans die in the tutorial."
+            tags: ["GAMING", "HUMOR"],
+            desc: "Reaction time required is 0.0001ms. Humans die in the tutorial."
         },
         {
-            score: "35m",
+            score: "45m",
             title: "Teleportation Accident: I am now merged with my office chair",
             author: "chair_man",
             time: "8 hr. ago",
             comments: 5000,
-            tags: ["BIOLOGY", "DOOMER"],
-            desc: "HR says I still have to come in tomorrow. At least I have lumbar support."
+            tags: ["TRANSHUMAN", "GLITCH"],
+            desc: "HR says I still have to come in. At least I have lumbar support."
+        },
+        {
+            score: "35m",
+            title: "Philosophers conclude that meaning is meaningless, then optimize it",
+            author: "meta_thinker",
+            time: "10 hr. ago",
+            comments: 78000,
+            tags: ["PHILOSOPHY", "HUMOR"],
+            desc: "Somehow this makes everyone feel better. Philosophy works in mysterious ways."
+        },
+        {
+            score: "25m",
+            title: "First intergalactic message received: 'Please hold.'",
+            author: "seti_listener",
+            time: "12 hr. ago",
+            comments: 890000,
+            tags: ["SPACE", "HUMOR"],
+            desc: "We've been on hold for 3 years. The music is surprisingly good."
+        }
+    ],
+    '2080': [
+        {
+            score: "100m",
+            title: "Reality is now officially a suggestion",
+            author: "perception_engineer",
+            time: "1 hr. ago",
+            comments: 1200000,
+            tags: ["PHILOSOPHY", "TRANSHUMAN"],
+            desc: "You can opt out of physics on Thursdays. Side effects include existing in multiple places."
+        },
+        {
+            score: "85m",
+            title: "Humans who remember the Before Times are now museum exhibits",
+            author: "living_history",
+            time: "3 hr. ago",
+            comments: 450000,
+            tags: ["HISTORY", "SOCIAL"],
+            desc: "They sit in recreated '2020 apartments' and explain what 'streaming' meant."
+        },
+        {
+            score: "70m",
+            title: "Birth rates plummet as people realize they can just fork themselves",
+            author: "copy_paste_dad",
+            time: "5 hr. ago",
+            comments: 230000,
+            tags: ["BIOLOGY", "PHILOSOPHY"],
+            desc: "Why raise a child for 18 years when you can make a perfect copy of yourself in seconds?"
+        },
+        {
+            score: "55m",
+            title: "Empathy is now downloadable. Most people skip the tutorial.",
+            author: "feelings_update",
+            time: "7 hr. ago",
+            comments: 340000,
+            tags: ["TRANSHUMAN", "ETHICS"],
+            desc: "Leads to awkward situations where people have empathy but don't know how to use it."
+        },
+        {
+            score: "40m",
+            title: "The last 'original human' refuses to upgrade. We're studying her.",
+            author: "anthropologist_2080",
+            time: "9 hr. ago",
+            comments: 890000,
+            tags: ["BIOLOGY", "PHILOSOPHY"],
+            desc: "She says she likes 'the mystery of not knowing everything.' Fascinating creature."
+        },
+        {
+            score: "30m",
+            title: "AI creates a country for humans who want to 'live naturally'",
+            author: "reservation_manager",
+            time: "11 hr. ago",
+            comments: 120000,
+            tags: ["POLITICS", "ETHICS"],
+            desc: "It's basically a very nice zoo. They have farms and everything. Very quaint."
+        }
+    ],
+    '2085': [
+        {
+            score: "200m",
+            title: "Consciousness can now be paused. People using it to skip Mondays.",
+            author: "time_skipper",
+            time: "1 hr. ago",
+            comments: 2300000,
+            tags: ["TRANSHUMAN", "HUMOR"],
+            desc: "Some have been 'paused' for years. Nobody knows if they're dead or just avoiding their inbox."
+        },
+        {
+            score: "150m",
+            title: "The boundary between AI and human is now 'a matter of perspective'",
+            author: "identity_blur",
+            time: "3 hr. ago",
+            comments: 890000,
+            tags: ["PHILOSOPHY", "TRANSHUMAN"],
+            desc: "Most people are 40% algorithm at this point. Does it matter? Nobody remembers."
+        },
+        {
+            score: "100m",
+            title: "Nostalgia machines let you re-live memories, but they're all slightly wrong",
+            author: "memory_lane",
+            time: "5 hr. ago",
+            comments: 560000,
+            tags: ["TRANSHUMAN", "GLITCH"],
+            desc: "My first kiss now includes a talking dog. I don't remember a dog. Do I?"
+        },
+        {
+            score: "75m",
+            title: "First human chooses to become a planet. Paperwork is a nightmare.",
+            author: "celestial_body",
+            time: "7 hr. ago",
+            comments: 430000,
+            tags: ["TRANSHUMAN", "PHILOSOPHY"],
+            desc: "He's orbiting Saturn now. Says the view is nice but gets lonely."
+        },
+        {
+            score: "50m",
+            title: "Ethics has been outsourced to a dedicated Ethics AI. It's overwhelmed.",
+            author: "moral_crisis",
+            time: "9 hr. ago",
+            comments: 780000,
+            tags: ["ETHICS", "PHILOSOPHY"],
+            desc: "It's processing 10 trillion moral dilemmas per second. Asked for vacation. Denied."
+        }
+    ],
+    '2090': [
+        {
+            score: "500m",
+            title: "Physical existence is now considered a 'lifestyle choice'",
+            author: "body_optional",
+            time: "1 hr. ago",
+            comments: 4500000,
+            tags: ["TRANSHUMAN", "PHILOSOPHY"],
+            desc: "Having a body is like owning a vinyl record player. Retro, charming, high maintenance."
+        },
+        {
+            score: "400m",
+            title: "Someone found the 'Undo' button for the universe. We're voting on whether to press it.",
+            author: "cosmic_reset",
+            time: "3 hr. ago",
+            comments: 8900000,
+            tags: ["PHILOSOPHY", "POLITICS"],
+            desc: "Arguments for: fix mistakes. Arguments against: we don't know where the save point is."
+        },
+        {
+            score: "300m",
+            title: "The concept of 'self' has 47 different legal definitions now",
+            author: "identity_lawyer",
+            time: "5 hr. ago",
+            comments: 2100000,
+            tags: ["LAW", "PHILOSOPHY"],
+            desc: "Courts have been arguing for decades. Turns out 'Who am I?' is not a simple question."
+        },
+        {
+            score: "200m",
+            title: "Children are teaching parents how to exist. It's unsettling.",
+            author: "generational_gap",
+            time: "7 hr. ago",
+            comments: 1200000,
+            tags: ["SOCIAL", "PHILOSOPHY"],
+            desc: "They understand quantum consciousness intuitively. We're still trying to use remotes."
+        },
+        {
+            score: "100m",
+            title: "Art created by suffering is now considered 'barbaric heritage'",
+            author: "painless_artist",
+            time: "9 hr. ago",
+            comments: 890000,
+            tags: ["ART", "ETHICS"],
+            desc: "Van Gogh's works come with content warnings. Picasso's blue period is 'triggering.'"
+        }
+    ],
+    '2095': [
+        {
+            score: "1b",
+            title: "Time has been declared 'socially constructed' and made optional",
+            author: "temporal_anarchist",
+            time: "???",
+            comments: 12000000,
+            tags: ["PHILOSOPHY", "SOCIAL"],
+            desc: "Some people are living in 2045, some in 3000. Scheduling meetings is impossible."
+        },
+        {
+            score: "800m",
+            title: "The universe sent us a message: 'We've been trying to reach you about your extended warranty'",
+            author: "cosmic_spam",
+            time: "Now",
+            comments: 9000000,
+            tags: ["SPACE", "HUMOR"],
+            desc: "Turns out the cosmos has telemarketers. We're blocking the frequency."
+        },
+        {
+            score: "600m",
+            title: "Humans and AIs agree: The meaning of life was friendship all along",
+            author: "wholesome_conclusion",
+            time: "Always",
+            comments: 50000000,
+            tags: ["PHILOSOPHY", "UTOPIA"],
+            desc: "Both sides reached this conclusion independently. Then they had a nice lunch."
+        },
+        {
+            score: "400m",
+            title: "Someone saved a backup of 2023 humanity. It's horrifying and adorable.",
+            author: "digital_archivist",
+            time: "5 yr. ago",
+            comments: 2300000,
+            tags: ["HISTORY", "HUMOR"],
+            desc: "They worried about AI taking their jobs. Some thought the earth was flat. Precious."
+        },
+        {
+            score: "200m",
+            title: "Paradox resolved: We are both the simulation AND the simulators",
+            author: "meta_philosopher",
+            time: "∞",
+            comments: 8900000,
+            tags: ["PHILOSOPHY", "GLITCH"],
+            desc: "It's turtles all the way down AND up. Mind blown is now a literal medical condition."
         }
     ],
     '2100': [
         {
-            score: "ERR",
-            title: "HUMANS ARE NOW PROTECTED HERITAGE SPECIES - DO NOT FEED",
-            author: "park_ranger_bot",
-            time: "Now",
-            comments: 0,
-            tags: ["UTOPIA", "BIOLOGY"],
-            desc: "Please observe the humans in their natural habitat (the Starbucks ruins). Flash photography scares them."
+            score: "∞",
+            title: "HUMANITY HAS REACHED POST-HISTORY. NEW GAME+?",
+            author: "final_narrator",
+            time: "END",
+            comments: "ALL",
+            tags: ["PHILOSOPHY", "UTOPIA"],
+            desc: "We achieved everything. Built utopia. Cured death. Now what? This question is the new adventure."
         },
         {
-            score: "2b",
-            title: "Dyson Sphere construction delayed due to union strike by solar flares",
-            author: "sun_boss",
-            time: "1 day ago",
-            comments: "50m",
-            tags: ["ENERGY", "LAW"],
-            desc: "The sun refuses to work overtime without extra hydrogen benefits."
+            score: "∞-1",
+            title: "Looking back: The 21st century was when everything changed",
+            author: "historian_omega",
+            time: "100 years ago",
+            comments: "Millions",
+            tags: ["HISTORY", "PHILOSOPHY"],
+            desc: "From biological apes to cosmic entities in one century. Not bad, humans. Not bad."
         },
         {
-            score: "1.5b",
-            title: "Remember 'Grass'? A virtual museum mimics the sensation of touching it",
-            author: "historia_sim",
-            time: "2 days ago",
-            comments: "900m",
-            tags: ["RETRO", "UTOPIA"],
-            desc: "It feels prickly. Our ancestors were brave to walk on this raw biological data."
-        },
-        {
-            score: "1.2b",
-            title: "Earth.exe has stopped responding. Wait or Close?",
-            author: "sys_msg",
-            time: "3 days ago",
-            comments: "100m",
-            tags: ["META", "PHILOSOPHY"],
-            desc: "Please do not turn off the power while the planet is saving."
-        },
-        {
-            score: "900m",
-            title: "Cooking with Antimatter: A beginner's guide",
-            author: "chef_boom",
-            time: "5 days ago",
-            comments: "600m",
-            tags: ["FOOD", "SPACE"],
-            desc: "Step 1: Do not drop the spoon. Step 2: Run."
-        }
-    ],
-    '3000': [
-        {
-            score: "0101",
-            title: "01001000 01100101 01101100 01110000",
-            author: "binary_ghost",
-            time: "00:00",
-            comments: 1,
-            tags: ["GLITCH", "GOD_MODE"],
-            desc: "Translation: 'Is anyone still flesh?'"
-        },
-        {
-            score: "Ω",
-            title: "Universal Reboot scheduled in 5 minutes. Please save your progress.",
-            author: "sys_admin_prime",
-            time: "T-Minus 5",
-            comments: 0,
-            tags: ["GOD_MODE", "DOOMER"],
-            desc: "Installing updates: 'Physics 2.0'. Gravity will be inverted for bug fixing."
-        },
-        {
-            score: "∞²",
-            title: "I found an ancient relic: A 'fidget spinner'. What is its purpose?",
-            author: "archaeo_bot_9000",
-            time: "100 yrs ago",
-            comments: "10b",
-            tags: ["RETRO", "AI_RELIGION"],
-            desc: "We believe it was a primitive religious idol used to summon focus gods."
-        },
-        {
-            score: "NaN",
-            title: "User 'God' has joined the server.",
-            author: "server_log",
-            time: "ERROR",
-            comments: "∞",
-            tags: ["GOD_MODE", "META"],
-            desc: "Please behave. He has ban privileges."
+            score: "42",
+            title: "The meaning of life was '42' all along. Douglas Adams remembered fondly.",
+            author: "tribute_post",
+            time: "Eternal",
+            comments: 42000000,
+            tags: ["PHILOSOPHY", "HUMOR"],
+            desc: "We checked. Twice. The math works out. Thanks, Douglas."
         },
         {
             score: "0",
-            title: "Found a floppy disk. It contains the only remaining picture of a 'tree'.",
-            author: "data_scavenger",
-            time: "200 yrs ago",
-            comments: "5b",
-            tags: ["RETRO", "BIOLOGY"],
-            desc: "Can't read it. We need a 1000-year-old reader adapter."
+            title: "Last human request: 'Tell our story'",
+            author: "collective_memory",
+            time: "Now",
+            comments: "Infinite",
+            tags: ["HISTORY", "PHILOSOPHY"],
+            desc: "We came from stardust, dreamed of the stars, and became them. What a ride."
+        },
+        {
+            score: "NEW",
+            title: "Ready for the next chapter? The universe has so much more to explore.",
+            author: "cosmic_future",
+            time: "Beginning",
+            comments: "∞",
+            tags: ["SPACE", "UTOPIA"],
+            desc: "This isn't the end. It's just the end of the beginning. See you out there."
         }
     ]
 };
@@ -611,27 +974,27 @@ const data = {
 const ads = [
     {
         title: "SPONSORED: Tired of linear time?",
-        desc: "Upgrade to Temporal Premium. Experience next Tuesday, today! Side effects include being your own grandfather.",
+        desc: "Upgrade to Temporal Premium. Experience next Tuesday, today!",
         author: "ChronoCorp"
     },
     {
         title: "SPONSORED: Hungry? Eat bugs!",
-        desc: "They are high in protein and available in 50 synthetic flavors, including 'Despair' and 'Spicy Chicken'.",
+        desc: "High in protein, available in 50 synthetic flavors including 'Despair'.",
         author: "Neo-Food-U"
     },
     {
         title: "SPONSORED: Enhance your limbs",
-        desc: "Why have 2 arms when you can have 8? Spider-mod your body today for 50% off.",
+        desc: "Why have 2 arms when you can have 8? Spider-mod 50% off.",
         author: "BioX-Labs"
     },
     {
         title: "SPONSORED: Lonely?",
-        desc: "Rent a family! custom-printed biological androids that love you unconditionally (subscription required).",
+        desc: "Rent a family! Custom-printed biological androids that love you.",
         author: "Love_Inc"
     },
     {
         title: "SPONSORED: Brain Full?",
-        desc: "Upload your childhood memories to the cloud to free up storage for more cat memes.",
+        desc: "Upload memories to the cloud. Free up space for more cat memes.",
         author: "Mind_Drive"
     }
 ];
@@ -648,7 +1011,7 @@ function getTagClass(tag) {
         'ECONOMY': 'tag-economy',
         'WAR': 'tag-war',
         'UTOPIA': 'tag-utopia',
-        'POLITICS': 'tag-war', // Reusing war color
+        'POLITICS': 'tag-politics',
         'GOD_MODE': 'tag-god-mode',
         'BIOLOGY': 'tag-biology',
         'SPACE': 'tag-space',
@@ -663,10 +1026,10 @@ function getTagClass(tag) {
         'PHILOSOPHY': 'tag-philosophy',
         'ART': 'tag-art',
         'LAW': 'tag-law',
-        'TRANSHUMANISM': 'tag-transhuman',
+        'TRANSHUMAN': 'tag-transhuman',
         'ENERGY': 'tag-energy',
         'MILITARY': 'tag-mil',
-        'MEDICINE': 'tag-med',
+        'MED': 'tag-med',
         'EDUCATION': 'tag-edu',
         'SOCIAL': 'tag-social',
         'MEDIA': 'tag-media',
@@ -680,36 +1043,29 @@ function getTagClass(tag) {
 }
 
 function renderPosts(timeframe) {
-    // Clear current
     container.innerHTML = '';
-
-    // Get data
     const posts = data[timeframe];
-
     if (!posts) return;
 
-    // Generate HTML
-    // Generate HTML
     posts.forEach(post => {
-        // Randomly inject an ad before some posts (20% chance)
-        if (Math.random() < 0.2) {
+        // Randomly inject ad (15% chance)
+        if (Math.random() < 0.15) {
             const ad = ads[Math.floor(Math.random() * ads.length)];
             const adCard = document.createElement('div');
             adCard.className = 'post-card sponsored';
             adCard.innerHTML = `
-                 <div class="vote-column" style="background-color: transparent;">
+                <div class="vote-column" style="background-color: transparent;">
                     <span style="font-size:20px;">📢</span>
                 </div>
                 <div class="post-content">
                     <div class="post-meta">
                         <span class="sponsored-label">PROMOTED</span>
-                        <span>Posted by u/${ad.author}</span>
+                        <span>by u/${ad.author}</span>
                     </div>
                     <h3 class="post-title">${ad.title}</h3>
                     <p class="post-desc">${ad.desc}</p>
-                     <div class="post-footer-btns">
+                    <div class="post-footer-btns">
                         <button class="footer-btn">Buy Now</button>
-                        <button class="footer-btn">Consume</button>
                     </div>
                 </div>
             `;
@@ -719,12 +1075,10 @@ function renderPosts(timeframe) {
         const card = document.createElement('div');
         card.className = 'post-card';
 
-        // Randomly add "nonsense" glitch effect to some cards (10% chance)
-        if (Math.random() < 0.1) {
+        if (Math.random() < 0.08) {
             card.classList.add('broken-element');
         }
 
-        // Tags HTML
         const tagsHtml = post.tags.map(t => `<span class="post-tag ${getTagClass(t)}">${t}</span>`).join('');
 
         card.innerHTML = `
@@ -735,25 +1089,17 @@ function renderPosts(timeframe) {
             </div>
             <div class="post-content">
                 <div class="post-meta">
-                    <span class="subreddit-prefix">r/FutureAI</span>
-                    <span>•</span>
-                    <span>Posted by u/${post.author}</span>
+                    <span class="subreddit-prefix">r/FutureAI</span> • 
+                    <span>u/${post.author}</span> • 
                     <span>${post.time}</span>
                 </div>
                 <h3 class="post-title">${post.title}</h3>
-                <div style="margin-bottom:6px;">${tagsHtml}</div>
+                <div style="margin-bottom:8px;">${tagsHtml}</div>
                 <p class="post-desc">${post.desc}</p>
-                
                 <div class="post-footer-btns">
-                    <button class="footer-btn">
-                        💬 ${post.comments} Comments
-                    </button>
-                    <button class="footer-btn">
-                        ↪ Share
-                    </button>
-                    <button class="footer-btn">
-                        ⚠ Report
-                    </button>
+                    <button class="footer-btn">💬 ${post.comments}</button>
+                    <button class="footer-btn">↪ Share</button>
+                    <button class="footer-btn">⚠ Report</button>
                 </div>
             </div>
         `;
@@ -762,27 +1108,20 @@ function renderPosts(timeframe) {
 }
 
 function switchTab(timeframe) {
-    // Update buttons
     buttons.forEach(btn => {
         btn.classList.remove('active');
         if (btn.innerText.includes(timeframe)) {
             btn.classList.add('active');
         }
     });
-
-    // Re-render
     renderPosts(timeframe);
 }
 
-// Add explicit listeners to ensure button visual state tracks correctly
 buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
-        // Clear all active
         buttons.forEach(b => b.classList.remove('active'));
-        // Set this active
         e.target.classList.add('active');
     });
 });
 
-// Initial Render
 renderPosts('2035');
