@@ -286,6 +286,98 @@ body {
     border-color: #143e55;
 }
 
+.tag-god-mode {
+    background-color: #2b2b00;
+    color: #ffff00;
+    border-color: #555500;
+    box-shadow: 0 0 5px #ffff00;
+}
+
+.tag-biology {
+    background-color: #0d2b18;
+    color: #00ff88;
+    border-color: #1a5530;
+}
+
+.tag-space {
+    background-color: #0d0d2b;
+    color: #bbbbff;
+    border-color: #1a1a55;
+}
+
+.tag-ai-religion {
+    background-color: #2b0d2b;
+    color: #ffccff;
+    border-color: #551a55;
+}
+
+.tag-retro {
+    background-color: #2b1a0d;
+    color: #ffcc99;
+    border-color: #55331a;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Sponsored/Ad Post Styling */
+.post-card.sponsored {
+    border: 1px solid #FFD700;
+    background: linear-gradient(45deg, var(--color-body), #1a1500);
+}
+
+.post-card.sponsored .post-title {
+    color: #FFD700;
+}
+
+.sponsored-label {
+    font-size: 10px;
+    color: #000;
+    background-color: #FFD700;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Nonsense / Glitch Effects */
+@keyframes glitch-anim {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-2px, 2px)
+    }
+
+    40% {
+        transform: translate(-2px, -2px)
+    }
+
+    60% {
+        transform: translate(2px, 2px)
+    }
+
+    80% {
+        transform: translate(2px, -2px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+.glitch-text {
+    animation: glitch-anim 0.3s infinite;
+    display: inline-block;
+    color: #ff00ff;
+    text-shadow: 2px 0 #00ffff;
+}
+
+.broken-element {
+    transform: rotate(1deg);
+    opacity: 0.8;
+}
+
 .post-desc {
     font-size: 14px;
     color: var(--color-text-body);
