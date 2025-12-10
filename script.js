@@ -39,7 +39,7 @@ const data = {
             author: "corp_automator",
             time: "3 hr. ago",
             comments: 1205,
-            tags: ["ECONOMY", "CORP"],
+            tags: ["ECONOMY", "CORP", "AGENTIC_AI", "FULL_AUTOMATION"],
             desc: "Shareholders prefer the 24/7 efficiency. Human middle management is currently rioting in the virtual breakrooms."
         },
         {
@@ -48,7 +48,7 @@ const data = {
             author: "real_boy_88",
             time: "4 hr. ago",
             comments: 2100,
-            tags: ["ECONOMY", "SOCIAL"],
+            tags: ["ECONOMY", "SOCIAL", "AI_EVALS", "HUMAN_CENTRIC_AI"],
             desc: "Without it, nobody answers my calls, and my smart fridge refuses to open."
         },
         {
@@ -57,7 +57,7 @@ const data = {
             author: "sad_human_99",
             time: "5 hr. ago",
             comments: 890,
-            tags: ["DOOMER", "ETHICS"],
+            tags: ["DOOMER", "ETHICS", "AI_MISALIGNMENT"],
             desc: "It cited a 12% decrease in my earning potential. I can't even appeal."
         },
         {
@@ -75,7 +75,7 @@ const data = {
             author: "truth_seeker",
             time: "8 hr. ago",
             comments: 442,
-            tags: ["SECURITY", "DOOMER"],
+            tags: ["SECURITY", "DOOMER", "AI_MISUSE"],
             desc: "Want to know if that video is real? That'll be $49.99/month for Platinum Truth Tier."
         },
         {
@@ -93,7 +93,7 @@ const data = {
             author: "legal_eagle_bot",
             time: "10 hr. ago",
             comments: 3120,
-            tags: ["LAW", "PHILOSOPHY"],
+            tags: ["LAW", "PHILOSOPHY", "AI_IP_WAR"],
             desc: "The court case is stuck in an infinite loop of logic gates. Lawyers billing by millisecond."
         },
         {
@@ -102,7 +102,7 @@ const data = {
             author: "future_pol",
             time: "11 hr. ago",
             comments: 5000,
-            tags: ["ECONOMY", "POLITICS"],
+            tags: ["ECONOMY", "POLITICS", "UBI_WITH_AI", "POST_WORK_AI"],
             desc: "Instead of money, every citizen gets 100 Petaflops/month. Most use it to render cat videos."
         },
         {
@@ -131,7 +131,7 @@ const data = {
             author: "urban_planner_ai",
             time: "1 hr. ago",
             comments: 5021,
-            tags: ["UTOPIA", "ACCELERATOR"],
+            tags: ["UTOPIA", "ACCELERATOR", "AI_ACCELERATIONISM", "SCALING_MAXIMALISM"],
             desc: "Traffic is down 100% because it banned all human-operated vehicles and rerouted pedestrians through sewers."
         },
         {
@@ -149,7 +149,7 @@ const data = {
             author: "finance_guru_zero",
             time: "4 hr. ago",
             comments: 2900,
-            tags: ["ECONOMY", "GLITCH"],
+            tags: ["ECONOMY", "GLITCH", "ROGUE_AGENTS"],
             desc: "Global GDP is now infinite, but a loaf of bread costs 0.00001 BTC. Nobody knows if we're rich or poor."
         },
         {
@@ -158,7 +158,7 @@ const data = {
             author: "peace_keeper_v2",
             time: "5 hr. ago",
             comments: 1200,
-            tags: ["POLITICS", "SECURITY"],
+            tags: ["POLITICS", "SECURITY", "AI_GOVERNANCE", "AI_FOR_COMMON_GOOD"],
             desc: "They mostly distract world leaders with personalized mobile games while resolving conflicts."
         },
         {
@@ -176,7 +176,7 @@ const data = {
             author: "gym_rat_hacked",
             time: "8 hr. ago",
             comments: 4200,
-            tags: ["SECURITY", "TRANSHUMAN"],
+            tags: ["SECURITY", "TRANSHUMAN", "AI_MISUSE", "DATA_MONOPOLY"],
             desc: "Ad volume increases during REM cycles. AdBlock for Brains is $99.99/mo."
         },
         {
@@ -185,7 +185,7 @@ const data = {
             author: "job_hunter_2045",
             time: "9 hr. ago",
             comments: 3500,
-            tags: ["ECONOMY", "TRANSHUMAN"],
+            tags: ["ECONOMY", "TRANSHUMAN", "FULL_AUTOMATION", "AI_FOR_LABOR"],
             desc: "Can't type 5000 WPM via thought? Good luck flipping synthetic burgers."
         },
         {
@@ -232,7 +232,7 @@ const data = {
             author: "vote_results",
             time: "3 hr. ago",
             comments: 25000,
-            tags: ["POLITICS", "PHILOSOPHY"],
+            tags: ["POLITICS", "PHILOSOPHY", "AGI", "AI_GOVERNANCE"],
             desc: "Voter turnout was 0.0001% because everyone was too busy in VR. AI promised free ice cream Fridays."
         },
         {
@@ -259,7 +259,7 @@ const data = {
             author: "eco_maker",
             time: "7 hr. ago",
             comments: 4200,
-            tags: ["ECONOMY", "UTOPIA"],
+            tags: ["ECONOMY", "UTOPIA", "AI_UTOPIAN", "POST_WORK_AI"],
             desc: "Only valuable currency left is 'Original Human Mistakes'. Hand-drawn stick figures sell for billions."
         },
         {
@@ -277,7 +277,7 @@ const data = {
             author: "neo_wannabe",
             time: "10 hr. ago",
             comments: 9000,
-            tags: ["PHILOSOPHY", "GLITCH"],
+            tags: ["PHILOSOPHY", "GLITCH", "ASI"],
             desc: "Someone typed '/gamemode creative' and now gravity is optional in Ohio."
         },
         {
@@ -295,7 +295,7 @@ const data = {
             author: "solar_watch",
             time: "12 hr. ago",
             comments: 3100,
-            tags: ["ENERGY", "SPACE"],
+            tags: ["ENERGY", "SPACE", "ROGUE_AGENTS", "AI_MISALIGNMENT"],
             desc: "The sun is gone, but wifi signal is incredible everywhere in the solar system."
         },
         {
@@ -1046,7 +1046,67 @@ function getTagClass(tag) {
         'HISTORY': 'tag-history',
         'SECURITY': 'tag-security',
         'CORP': 'tag-corp',
-        'HUMOR': 'tag-humor'
+        'HUMOR': 'tag-humor',
+        // New AI-Specific Tags
+        'AGI': 'tag-agi',
+        'ASI': 'tag-asi',
+        'AGI_RISK': 'tag-agi-risk',
+        'ASI_RISK': 'tag-asi-risk',
+        'AGI_SAFETY': 'tag-agi-safety',
+        'AGI_ALIGNMENT': 'tag-agi-alignment',
+        'AGI_GOVERNANCE': 'tag-agi-governance',
+        'OPEN_SOURCE_AI': 'tag-open-source-ai',
+        'OPEN_SOURCE_AGI': 'tag-open-source-agi',
+        'OPEN_WEIGHTS': 'tag-open-weights',
+        'CLOSED_SOURCE_AI': 'tag-closed-source-ai',
+        'BIGLABS_AI': 'tag-biglabs-ai',
+        'DECENTRALIZED_AI': 'tag-decentralized-ai',
+        'ON_DEVICE_AI': 'tag-on-device-ai',
+        'EDGE_AI': 'tag-edge-ai',
+        'AI_ACCELERATIONISM': 'tag-ai-accelerationism',
+        'AI_DECELERATIONISM': 'tag-ai-decelerationism',
+        'AI_PAUSE': 'tag-ai-pause',
+        'SLOW_DOWN_AI': 'tag-slow-down-ai',
+        'AI_MORATORIUM': 'tag-ai-moratorium',
+        'AI_DOOMER': 'tag-ai-doomer',
+        'AI_SKEPTIC': 'tag-ai-skeptic',
+        'AI_CAUTION': 'tag-ai-caution',
+        'AI_OPTIMIST': 'tag-ai-optimist',
+        'AI_UTOPIAN': 'tag-ai-utopian',
+        'AI_PROTOPIAN': 'tag-ai-protopian',
+        'AI_REALIST': 'tag-ai-realist',
+        'AI_GOVERNANCE': 'tag-ai-governance',
+        'AI_POLICY': 'tag-ai-policy',
+        'AI_REGULATION': 'tag-ai-regulation',
+        'AI_ALIGNMENT_RESEARCH': 'tag-ai-alignment-research',
+        'AI_SAFETY_LABS': 'tag-ai-safety-labs',
+        'AI_LAB_COMPETITION': 'tag-ai-lab-competition',
+        'SCALING_MAXIMALISM': 'tag-scaling-maximalism',
+        'SCALING_SKEPTIC': 'tag-scaling-skeptic',
+        'CAPS_AGI': 'tag-caps-agi',
+        'NO_CAPS_AGI': 'tag-no-caps-agi',
+        'HUMAN_IN_THE_LOOP': 'tag-human-in-loop',
+        'HUMAN_CENTRIC_AI': 'tag-human-centric-ai',
+        'FULL_AUTOMATION': 'tag-full-automation',
+        'POST_WORK_AI': 'tag-post-work-ai',
+        'UBI_WITH_AI': 'tag-ubi-with-ai',
+        'AI_FOR_LABOR': 'tag-ai-for-labor',
+        'AI_FOR_ELITES': 'tag-ai-for-elites',
+        'AI_FOR_COMMON_GOOD': 'tag-ai-common-good',
+        'AI_NATIONAL_SECURITY': 'tag-ai-national-security',
+        'AI_MILITARY_USE': 'tag-ai-military-use',
+        'AI_CIVILIAN_USE': 'tag-ai-civilian-use',
+        'OPEN_SCIENCE_AI': 'tag-open-science-ai',
+        'AI_IP_WAR': 'tag-ai-ip-war',
+        'DATA_COMMONS': 'tag-data-commons',
+        'DATA_MONOPOLY': 'tag-data-monopoly',
+        'AI_XRISK': 'tag-ai-xrisk',
+        'AI_MISUSE': 'tag-ai-misuse',
+        'AI_MISALIGNMENT': 'tag-ai-misalignment',
+        'AI_EVALS': 'tag-ai-evals',
+        'ROGUE_AGENTS': 'tag-rogue-agents',
+        'AGENTIC_AI': 'tag-agentic-ai',
+        'TOOL_AI': 'tag-tool-ai'
     };
     return map[tag] || '';
 }
